@@ -80,10 +80,42 @@ void init_alarm_boot_properties()
      * 7 -> CBLPWR_N pin toggled (for external power supply)
      * 8 -> KPDPWR_N pin toggled (power key pressed)
      */
-        if(buf[0] == '3')
-            property_set("ro.alarm_boot", "true");
-        else
-            property_set("ro.alarm_boot", "false");
+  if (buf[0] == '0') {
+        property_set("ro.boot.bootreason", "invalid");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '1') {
+        property_set("ro.boot.bootreason", "hard_reset");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '2') {
+        property_set("ro.boot.bootreason", "smpl");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '3'){
+        property_set("ro.alarm_boot", "true");
+    }
+  else if (buf[0] == '4') {
+        property_set("ro.boot.bootreason", "dc_chg");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '5') {
+        property_set("ro.boot.bootreason", "usb_chg");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '6') {
+        property_set("ro.boot.bootreason", "pon1");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '7') {
+        property_set("ro.boot.bootreason", "cblpwr");
+        property_set("ro.alarm_boot", "false");
+    }
+  else if (buf[0] == '8') {
+        property_set("ro.boot.bootreason", "kpdpwr");
+        property_set("ro.alarm_boot", "false");
+    }
+
     }
 }
 
