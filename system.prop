@@ -71,9 +71,6 @@ sdm.perf_hint_window=50
 persist.hwc.enable_vds=1
 sdm.debug.disable_rotator_split=1
 
-# NFC
-ro.nfc.port=I2C
-
 # Perf
 ro.am.reschedule_service=true
 ro.vendor.extension_library=libqti-perfd-client.so
