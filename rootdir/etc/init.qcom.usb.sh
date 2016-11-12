@@ -93,81 +93,51 @@ fi
 
 target=`getprop ro.board.platform`
 
-#ifdef VENDOR_EDIT
-boot_mode=`getprop ro.boot.ftm_mode`
-echo "boot_mode: $boot_mode" > /dev/kmsg
-case "$boot_mode" in
-    "ftm_at" | "ftm_rf" | "ftm_wlan" | "ftm_mos")
-    usb_config=`getprop persist.sys.usb.config`
-    echo "BEFORE boot_mode: $usb_config" > /dev/kmsg
-    if [ "$usb_config" != "diag,adb" ] ; then
-        setprop persist.sys.usb.config diag,adb
-    fi
-    ;;
-esac
-usb_config=`getprop persist.sys.usb.config`
-echo "AFTER boot_mode: $usb_config" > /dev/kmsg
-#endif
-
 #
 # Allow USB enumeration with default PID/VID
 #
 baseband=`getprop ro.baseband`
 echo 1  > /sys/class/android_usb/f_mass_storage/lun/nofua
 usb_config=`getprop persist.sys.usb.config`
-echo "BEFORE: $usb_config" > /dev/kmsg
 case "$usb_config" in
-    "" | "adb" | "none") #USB persist config not set, select default configuration
+    "" | "adb") #USB persist config not set, select default configuration
       case "$esoc_link" in
           "PCIe")
               setprop persist.sys.usb.config diag,diag_mdm,serial_cdev,rmnet_qti_ether,mass_storage,adb
           ;;
           *)
 	  case "$soc_hwplatform" in
-	      "Dragon")
+	      "Dragon" | "SBC")
 	          setprop persist.sys.usb.config diag,adb
 	      ;;
               *)
-		case "$target" in
-                        "msm8916")
-                            setprop persist.sys.usb.config diag,serial_smd,rmnet_bam,adb
-                        ;;
-                        "msm8994" | "msm8992")
-                            if [ "$soc_hwplatform" == "Dragon" ]; then
-                               setprop persist.sys.usb.config diag,adb
-                            else
-                               setprop persist.sys.usb.config diag,serial_smd,serial_tty,rmnet_ipa,mass_storage,adb
-                            fi
-                        ;;
-			"msm8996")
-			    if [ "$soc_revision" == "1.0" -o "$soc_hwplatform" == "Dragon" ]
-			    then
-                               setprop persist.sys.usb.config diag,adb
-			    #[BSP-66]-Anderson-Disable_set_the_property.
-			    #This will ause BSP-66 issue and cause all the port enable in default.
-			    #else
-			       #setprop persist.sys.usb.config diag,serial_cdev,serial_tty,rmnet_ipa,mass_storage,adb
-			    fi
-			;;
-                        "msm8909" | "msm8937")
-                            setprop persist.sys.usb.config diag,serial_smd,rmnet_qti_bam,adb
-                        ;;
-                        "msm8952" | "titanium")
-                            setprop persist.sys.usb.config diag,serial_smd,rmnet_ipa,adb
-                        ;;
-                        *)
-                            setprop persist.sys.usb.config diag,adb
-                        ;;
-                    esac
-              ;;
-          esac
-          ;;
+	      case "$target" in
+                  "msm8916")
+		      setprop persist.sys.usb.config diag,serial_smd,rmnet_bam,adb
+		  ;;
+	          "msm8994" | "msm8992")
+	              setprop persist.sys.usb.config diag,serial_smd,serial_tty,rmnet_ipa,mass_storage,adb
+		  ;;
+	          "msm8996")
+	              setprop persist.sys.usb.config diag,serial_cdev,serial_tty,rmnet_ipa,mass_storage,adb
+		  ;;
+	          "msm8909" | "msm8937")
+		      setprop persist.sys.usb.config diag,serial_smd,rmnet_qti_bam,adb
+		  ;;
+	          "msm8952" | "titanium")
+		      setprop persist.sys.usb.config diag,serial_smd,rmnet_ipa,adb
+		  ;;
+	          *)
+		      setprop persist.sys.usb.config diag,adb
+		  ;;
+              esac
+	      ;;
+	  esac
+	  ;;
       esac
       ;;
   * ) ;; #USB persist config exists, do nothing
 esac
-
-
 
 #
 # Do target specific things
@@ -278,4 +248,3 @@ case "$soc_id" in
 		setprop sys.usb.rps_mask 10
 	;;
 esac
-

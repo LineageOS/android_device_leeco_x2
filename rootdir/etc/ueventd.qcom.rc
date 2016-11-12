@@ -34,7 +34,7 @@
 /dev/kgsl-2d0             0666   root       root
 /dev/kgsl-2d1             0666   root       root
 /dev/ion                  0664   system     system
-/dev/rtc0                 0600   system     system
+/dev/rtc0                 0660   system     system
 /dev/smd0                 0660   system     system
 /dev/smd4                 0660   system     system
 /dev/smd_cxm_qmi          0640   radio      radio
@@ -158,7 +158,7 @@
 /dev/msm_voicememo        0660   system     audio
 /dev/smd3                 0660   bluetooth  net_bt_stack
 /dev/smd2                 0660   bluetooth  net_bt_stack
-/dev/ttyHSL1              0660   system     system
+/dev/ttyHSL1              0666   system     system
 /dev/ttyHS1               0660   system     system
 /dev/mdm                  0660   system     radio
 /sys/devices/virtual/smdpkt/smdcntl*       open_timeout   0664 radio radio
@@ -179,7 +179,7 @@
 /dev/tsc_ci0              0660   media       media
 
 # ultrasonic fingerprint
-/sys/devices/soc/757a000.i2c/i2c-6/*                eeprom         0440    system   system
+/sys/devices/soc/75b6000.i2c/i2c-8/*                eeprom         0440    system   system
 
 # sensors
 /sys/devices/i2c-12/12-*  pollrate_ms 0664 system system
@@ -212,12 +212,13 @@
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
 /sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0/queues/rx-* rps_cpus 0660 system system
-/sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/p2p0/queues/rx-* rps_cpus 0660 system system
+/sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/p2p*/queues/rx-* rps_cpus 0660 system system
 
-# nfc permissions
+#nfc permissions
 /dev/nfc-nci              0660    nfc         nfc
-/dev/nq-nci               0660    nfc         nfc
+/dev/nq-nci               0666    nfc         nfc
 /dev/assd                 0660    nfc         nfc
+/dev/p61                  0660    ese         ese
 
 # UIO devices
 /dev/uio0                 0660   system     system
@@ -239,6 +240,16 @@
 # ImproveTouch device
 /dev/hbtp_input           0660   system     system
 /dev/hbtp_vm              0660   system     system
+
+#add for phonecontrol security
+/dev/block/sdf9           0660   system     system
+/dev/block/sdf10          0660   system     system
+
+# misc permissions for force upgrade
+/dev/block/sda4 0660 system system
+
+#add for frp
+/dev/block/platform/soc/624000.ufshc/by-name/frp   0660   system    system
 
 # Add device block for FRP
 /dev/block/bootdevice/by-name/config    0660   system     system
