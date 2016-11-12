@@ -167,8 +167,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    fingerprintd \
-    LeEcoPocketMode
+    fingerprintd
 
 # Gello
 PRODUCT_PACKAGES += \
