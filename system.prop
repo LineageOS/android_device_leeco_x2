@@ -1,14 +1,16 @@
+
 # Audio
 ro.qc.sdk.audio.ssr=false
-ro.qc.sdk.audio.fluencetype=fluence
+persist.audio.ssr.3mic=false
+ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
+persist.audio.fluence.speaker=false
 tunnel.audio.encode=false
 media.aac_51_output_enabled=true
 audio.offload.buffer.size.kb=32
 audio.offload.video=true
-audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 audio.offload.track.enable=false
 audio.deep_buffer.media=true
@@ -33,14 +35,10 @@ qcom.bluetooth.soc=rome
 persist.camera.imglib.fddsp=1
 persist.camera.llc=1
 persist.camera.llnoise=1
+persist.camera.stats.test=5
 camera.hal1.packagelist=com.skype.raider,com.whatsapp,com.tencent.mm,com.google.android.GoogleCamera
 
-# Display power reduction (FOSS)
-ro.qcom.dpps.sensortype=3
-ro.qualcomm.display.paneltype=1
-ro.qualcomm.foss=1
-config.foss.xml=1
-config.foss.path=/system/etc/FOSSConfig.xml
+ro.qualcomm.cabl=2
 
 # CNE
 persist.cne.feature=1
@@ -51,7 +49,31 @@ persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 
 # Fingerprint
-persist.qfp=false
+persist.qfp=true
+persist.qfp.fd_enabled=1
+persist.qfp.ssc_enable_island=1
+persist.qfp.ssc_fgoff_dil_s1=10
+persist.qfp.ssc_fgoff_dil_home=1
+persist.qfp.finger_evt_enabled=1
+
+persist.qfp.ssc_thresh_s1=0.570
+persist.qfp.ssc_thresh_s1_off=0.0
+persist.qfp.ssc_thresh_s1_rub=1500
+persist.qfp.ssc_thresh_s2=0.430
+persist.qfp.ssc_thresh_s2_off=4.0
+persist.qfp.ssc_thresh_s2_touch=0.430
+persist.qfp.ssc_thresh_s2_lift=0.410
+
+persist.qfp.filter_movefinger=1000
+persist.qfp.filter_holdfinger=50000
+persist.qfp.filter_insuffcov=6000
+persist.qfp.filter_liftfinger=0
+
+persist.qfp.ssc_basis_s1=/persist/qc_senseid/bg_estimation/bg_small1_basis.dat
+persist.qfp.ssc_basis_s1_off=/persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat
+persist.qfp.ssc_basis_s2=/persist/qc_senseid/bg_estimation/bg_small2_basis.dat
+persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
+persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
 # GPS
 persist.gps.qc_nlp_in_use=1
@@ -65,11 +87,19 @@ debug.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 ro.opengles.version=196609
-ro.sf.lcd_density=480
+ro.sf.lcd_density=560
 persist.sys.wfd.virtual=0
 sdm.perf_hint_window=50
 persist.hwc.enable_vds=1
 sdm.debug.disable_rotator_split=1
+
+#property for vendor specific library
+ro.vendor.gt_library=libqti-gt.so
+ro.vendor.at_library=libqti-at.so
+sys.games.gt.prof=1
+
+# NFC
+ro.nfc.port=I2C
 
 # Perf
 ro.am.reschedule_service=true
@@ -111,6 +141,13 @@ persist.radio.ignore_dom_time=5
 persist.radio.hw_mbn_update=0
 persist.radio.sw_mbn_update=0
 persist.radio.start_ota_daemon=1
+persist.radio.cs_srv_type=1
+persist.radio.calls.on.ims=0
+persist.radio.jbims=0
+persist.radio.csvt.enabled=false
+persist.radio.rat_on=combine
+persist.radio.mt_sms_ack=20
+ro.telephony.default_cdma_sub=0
 
 # RmNet Data
 persist.rmnet.data.enable=true
@@ -128,3 +165,21 @@ persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
+
+# Sensor
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
+ro.qcom.ad.sensortype=3
+
+#Fingerprint up/down for alipay.
+persist.qfp.touch_enabled=1
+
+ro.config.le_hardware_version=HW_1.0.0
+ro.le.mtpname=Le Max2
+
+ro.le.regist_wechat_key=true
+ro.internal.model=Le X820
+ro.vendor.wechatpay.support=true
+
+# Fastcharge
+persist.sys.le_fast_chrg_enable=1
