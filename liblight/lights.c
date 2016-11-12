@@ -50,7 +50,7 @@ char const*const BLUE_LED_FILE
         = "/sys/class/leds/blue/brightness";
 
 char const*const LCD_FILE
-        = "/sys/class/leds/lcd-backlight/brightness";
+        = "/sys/class/leds/wled/brightness";
 
 const char*const BUTTONS_FILE
         = "/sys/class/leds/button-backlight/brightness";
