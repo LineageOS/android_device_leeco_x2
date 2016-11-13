@@ -370,13 +370,13 @@ service sw_coredump /system/bin/sw_coredump
 on property:sys.factory.test=running
    chown system system /sys/devices/soc/soc:qcom,camera-flash/flashled1
    chown system system /sys/devices/soc/soc:qcom,camera-flash/flashled2
-   setenforce 0
+   #setenforce 0
 
 # factory test stoped
 on property:sys.factory.test=stoped
    chown root root /sys/devices/soc/soc:qcom,camera-flash/flashled1
    chown root root /sys/devices/soc/soc:qcom,camera-flash/flashled2
-   setenforce 1
+   #setenforce 1
 
 #set nvm_service
 service nvm_service /system/bin/nvm_service
