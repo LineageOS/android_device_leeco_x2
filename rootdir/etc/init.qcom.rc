@@ -900,6 +900,7 @@ on property:drmdiag.load=0
 service qcom-sh /system/bin/sh /init.qcom.sh
     class late_start
     user root
+    seclabel u:r:bluetooth_loader:s0
     oneshot
 
 service atfwd /system/bin/ATFWD-daemon
@@ -918,6 +919,7 @@ service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
     class late_start
     group radio wifi inet
     disabled
+    seclabel u:r:bluetooth_loader:s0
     oneshot
 
 on property:persist.data.ds_fmc_app.mode=1
