@@ -589,7 +589,8 @@ service config_bt_addr /system/bin/btnvtool -O
 
 service config_bluetooth /system/bin/sh /system/etc/init.qcom.bt.sh "onboot"
     class core
-    user root
+    user bluetooth
+    group bluetooth system
     oneshot
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
