@@ -124,10 +124,6 @@ void vendor_load_properties() {
     char rf_version[PROP_VALUE_MAX];
     int rc;
 
-    rc = property_get("ro.cm.device", device, NULL);
-    if (!rc || strncmp(device, "x2", PROP_VALUE_MAX))
-        return;
-
     property_set("ro.config.product", "x2");
     property_set("ro.product.model", "Le X829");
 

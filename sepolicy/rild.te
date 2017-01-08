@@ -4,4 +4,3 @@ allow rild diag_prop:property_service set;
 
 # The RIL stashes something in a system property
 allow rild system_prop:property_service set;
-get_prop(rild, diag_prop);
