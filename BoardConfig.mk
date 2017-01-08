@@ -23,9 +23,6 @@
 # Boldly go.
 USE_CLANG_PLATFORM_BUILD := true
 
-# Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
-
 TARGET_OTA_ASSERT_DEVICE := le_x2,LeMax2_CN,LeMax2_NA
 
 DEVICE_PATH := device/leeco/x2
