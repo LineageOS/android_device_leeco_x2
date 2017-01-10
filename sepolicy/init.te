@@ -3,3 +3,4 @@ allow init socket_device:sock_file { create setattr unlink };
 
 allow init sysfs:dir { write };
 allow init sysfs:file { read write };
+allow init init:socket { create bind read write };
