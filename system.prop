@@ -183,3 +183,6 @@ ro.vendor.wechatpay.support=true
 
 # Fastcharge
 persist.sys.le_fast_chrg_enable=1
+
+# Storage
+ro.sdcardfs.enable=true
