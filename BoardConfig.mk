@@ -192,6 +192,9 @@ USE_SENSOR_MULTI_HAL := true
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Media
+TARGET_USES_MEDIA_EXTENSIONS := true
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
