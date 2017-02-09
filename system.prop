@@ -52,8 +52,7 @@ persist.camera.imglib.fddsp=1
 persist.camera.llc=1
 persist.camera.llnoise=1
 persist.camera.stats.test=5
-camera.hal1.packagelist=com.skype.raider,com.whatsapp,com.tencent.mm,com.google.android.GoogleCamera
-
+persist.camera.HAL3.enabled=1
 ro.qualcomm.cabl=2
 
 # CNE
