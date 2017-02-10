@@ -530,7 +530,6 @@ etc/firmware/widevine.b05
 etc/firmware/widevine.b06
 etc/firmware/widevine.mbn
 etc/firmware/widevine.mdt
-etc/firmware/wlan/qca_cld/WCNSS_cfg.dat
 
 # Other binaries
 bin/hvdcp_opti
