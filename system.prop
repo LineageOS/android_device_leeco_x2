@@ -21,14 +21,14 @@ use.voice.path.for.pcm.voip=true
 audio.offload.multiaac.enable=true
 audio.offload.gapless.enabled=true
 audio.safx.pbe.enabled=true
-#audio.parser.ip.buffer.size=262144
+audio.parser.ip.buffer.size=0
 audio.dolby.ds2.enabled=false
 audio.dolby.ds2.hardbypass=false
 audio.offload.passthrough=false
 audio.offload.multiple.enabled=true
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=1
-audio_hal.period_size=160
+audio_hal.period_size=192
 
 persist.sys.media.use-awesome=1
 sys.keep_app_1=com.bel.android.dspmanager
@@ -52,8 +52,17 @@ persist.camera.imglib.fddsp=1
 persist.camera.llc=1
 persist.camera.llnoise=1
 persist.camera.stats.test=5
-persist.camera.HAL3.enabled=1
 ro.qualcomm.cabl=2
+#camera.disable_zsl_mode=1
+media.camera.ts.monotonic=0
+
+# Additional i/p buffer in case of encoder DCVS
+vidc.enc.dcvs.extra-buff-count=2
+
+# Set default power mode to low power for encoder
+vidc.debug.perf.mode=2
+
+qcom.hw.aac.encoder=true
 
 # CNE
 persist.cne.feature=1
@@ -175,6 +184,9 @@ persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
+#Enable WFC feature
+persist.data.iwlan.enable=true
+
 # Timeservice
 persist.timed.enable=true
 
@@ -212,14 +224,6 @@ media.stagefright.enable-scan=true
 mmp.enable.3g2=true
 mm.enable.smoothstreaming=true
 persist.mm.enable.prefetch=true
-
-# Additional i/p buffer in case of encoder DCVS
-vidc.enc.dcvs.extra-buff-count=2
-
-# Set default power mode to low power for encoder
-vidc.debug.perf.mode=2
-
-qcom.hw.aac.encoder=true
 
 # GOOGLE DNS
 net.dns1=8.8.8.8
