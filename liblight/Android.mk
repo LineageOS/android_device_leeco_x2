@@ -17,6 +17,9 @@ LOCAL_PATH:= $(call my-dir)
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
 include $(CLEAR_VARS)
 
+# Replace the shared lights
+LOCAL_OVERRIDES_PACKAGES := lights.msm8996
+
 LOCAL_SRC_FILES := lights.c
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_SHARED_LIBRARIES := liblog libcutils
