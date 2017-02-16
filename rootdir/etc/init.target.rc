@@ -59,7 +59,7 @@ on post-fs-data
     restorecon_recursive /persist
     
 on property:init.svc.bootanim=running
-    write /sys/class/leds/wled/brightness 4095
+    write /sys/class/leds/wled/brightness 255
 
 on boot
     start rmt_storage
