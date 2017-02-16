@@ -33,8 +33,6 @@
 
 #include <hardware/lights.h>
 
-#include "lights.h"
-
 /******************************************************************************/
 
 struct backlight_config {
@@ -56,6 +54,9 @@ char const*const GREEN_LED_FILE
 
 char const*const BLUE_LED_FILE
         = "/sys/class/leds/blue/brightness";
+
+char const*const LCD_MAX_BRIGHTNESS
+       = "/sys/class/leds/wled/max_brightness";
 
 char const*const LCD_FILE
         = "/sys/class/leds/wled/brightness";
@@ -502,7 +503,7 @@ static int open_lights(const struct hw_module_t* module, char const* name,
     else
         return -EINVAL;
 
-    int max_brightness = read_int(PANEL_MAX_BRIGHTNESS_NODE);
+    int max_brightness = read_int(LCD_MAX_BRIGHTNESS);
     if (max_brightness < 0) {
         ALOGE("%s: failed to read max panel brightness, fallback to 255!",
             __func__);
