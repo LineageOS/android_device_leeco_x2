@@ -1,1 +1,0 @@
-allow netmgrd diag_prop:property_service set;
