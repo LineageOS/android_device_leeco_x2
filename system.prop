@@ -18,26 +18,10 @@ persist.audio.dualmic.config=false
 ro.audio.flinger_standbytime_ms=300
 
 # Camera
-persist.camera.imglib.fddsp=1
-persist.camera.llc=1
-persist.camera.llnoise=1
 persist.camera.stats.test=5
-ro.qualcomm.cabl=2
-#camera.disable_zsl_mode=1
 media.camera.ts.monotonic=0
 
-# Set default power mode to low power for encoder
-vidc.debug.perf.mode=2
-
 qcom.hw.aac.encoder=true
-
-# CNE
-persist.cne.feature=1
-
-# Data modules
-ro.use_data_netmgrd=true
-persist.data.netmgrd.qos.enable=true
-persist.data.mode=concurrent
 
 # Fingerprint
 persist.qfp=true
@@ -46,6 +30,7 @@ persist.qfp.ssc_enable_island=1
 persist.qfp.ssc_fgoff_dil_s1=10
 persist.qfp.ssc_fgoff_dil_home=1
 persist.qfp.finger_evt_enabled=1
+persist.qfp.touch_enabled=1
 
 persist.qfp.ssc_thresh_s1=0.570
 persist.qfp.ssc_thresh_s1_off=0.0
@@ -66,74 +51,14 @@ persist.qfp.ssc_basis_s2=/persist/qc_senseid/bg_estimation/bg_small2_basis.dat
 persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
 persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
+# Apical AD
+ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
+
 # GPS
-persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.location
-ro.gps.agps_provider=1
 
-# Graphics
-debug.sf.hw=1
-debug.egl.hw=1
-debug.gralloc.enable_fb_ubwc=1
-dev.pm.dyn_samplingrate=1
-persist.demo.hdmirotationlock=false
-ro.opengles.version=196609
+# Screen Density
 ro.sf.lcd_density=560
-persist.sys.wfd.virtual=0
-sdm.perf_hint_window=50
-persist.hwc.enable_vds=1
-sdm.debug.disable_rotator_split=1
-
-# NFC
-ro.nfc.port=I2C
-
-# Perf
-ro.am.reschedule_service=true
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.min_freq_0=307200
-ro.min_freq_4=307200
-ro.sys.fw.bg_apps_limit=60
-
-# QCOM
-ro.frp.pst=/dev/block/bootdevice/by-name/config
-drm.service.enabled=true
-
-# RmNet Data
-persist.rmnet.data.enable=true
-persist.data.wda.enable=true
-persist.data.df.dl_mode=5
-persist.data.df.ul_mode=5
-persist.data.df.agg.dl_pkt=10
-persist.data.df.agg.dl_size=4096
-persist.data.df.mux_count=8
-persist.data.df.iwlan_mux=9
-persist.data.df.dev_name=rmnet_usb0
-
-# Timeservice
-persist.timed.enable=true
-
-# Wifi
-wifi.interface=wlan0
-
-#Fingerprint up/down for alipay.
-persist.qfp.touch_enabled=1
-
-ro.le.regist_wechat_key=true
-ro.vendor.wechatpay.support=true
 
 # Storage
 #ro.sdcardfs.enable=true
-
-# GOOGLE DNS
-net.dns1=8.8.8.8
-net.dns2=8.8.4.4
-net.rmnet0.dns1=8.8.8.8
-net.rmnet0.dns2=8.8.4.4
-net.ppp0.dns1=8.8.8.8
-net.ppp0.dns2=8.8.4.4
-net.wlan0.dns1=8.8.8.8
-net.wlan0.dns2=8.8.4.4
-net.eth0.dns1=8.8.8.8
-net.eth0.dns2=8.8.4.4
-net.gprs.dns1=8.8.8.8
-net.gprs.dns2=8.8.4.4
