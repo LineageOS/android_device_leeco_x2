@@ -1,7 +1,5 @@
 # Audio
 etc/firmware/tfa98xx.cnt
-lib/hw/audio.primary.msm8996.so
-lib64/hw/audio.primary.msm8996.so
 vendor/etc/audio_output_policy_letv.conf
 
 # Audio ACDB
