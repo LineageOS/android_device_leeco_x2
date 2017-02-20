@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa5d592f_4c875d10",
+        "filename": "lineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2017-02-20T16:51:13Z",
+      "side": 1,
+      "message": "LeMobile is what is in the stock build.prop for both x2 and zl1",
+      "revId": "71f43f88b6cc6821d21914b7cdc19b34d9b2f802",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa5d592f_ec9e1163",
+        "filename": "lineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2017-02-20T16:51:13Z",
+      "side": 1,
+      "message": "android-letv is what is is the build.prop from the 5.8.0195 North American stock build. The stock zl1 files I have don\u0027t have Google services",
+      "revId": "71f43f88b6cc6821d21914b7cdc19b34d9b2f802",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
