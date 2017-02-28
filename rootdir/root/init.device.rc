@@ -1,0 +1,202 @@
+# Copyright (c) 2009-2012, 2014-2015, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor
+#       the names of its contributors may be used to endorse or promote
+#       products derived from this software without specific prior written
+#       permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+on init
+    # to create a link for /data/fastplay
+    symlink /data/fastplay /video
+
+    # change for usb typec headset prop
+    chown media media /sys/module/snd_soc_msm8996/parameters/usb_typec_swap
+    chown media media /sys/module/snd_soc_wcd_mbhc/parameters/headset_swap_backmic
+    chown media media /sys/devices/virtual/typec/typec_device/supported_dev
+    chown media media /sys/module/cyccg/parameters/typec_headset_with_analog
+
+on boot
+    # sleep_sign used by DebugUtils APP
+    chown system system /sys/class/leds/blue/sleep_sign
+    chmod 0666 /sys/class/leds/blue/sleep_sign
+
+    # Create a directory for Battery Daemon logs
+    mkdir /data/battd 0755 log log
+
+    # to mkdir for letv bootvideo feature
+    mkdir /data/fastplay 0777 system system
+
+    chown system /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input2/wake_gesture
+    chmod 0666 /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input2/wake_gesture
+
+    # Chown led nodes as needed from UI running on system server
+    chown system system /sys/class/leds/button-backlight/brightness
+    chown system system /sys/class/leds/torch-light1/brightness
+
+    # Chown for backlight
+    chown system system /sys/class/leds/lcd-backlight/brightness
+    chown system system /sys/class/leds/lcd-backlight/max_brightness
+    chown system system /sys/class/leds/wled/brightness
+    chown system system /sys/class/leds/wled/max_brightness
+
+    chmod 0666 /sys/class/leds/lcd-backlight/brightness
+    chmod 0666 /sys/class/leds/lcd-backlight/max_brightness
+    chmod 0666 /sys/class/leds/wled/brightness
+    chmod 0666 /sys/class/leds/wled/max_brightness
+
+#for WiHD
+    chown root system /sys/devices/virtual/video/sii6400/mode
+    chown root system /sys/devices/virtual/video/sii6400/wihd/connect
+    chown root system /sys/devices/virtual/video/sii6400/wihd/state
+    chown root system /sys/devices/virtual/video/sii6400/wihd/wvan/join
+    chown root system /sys/devices/virtual/video/sii6400/wihd/wvan/scan
+    chown root system /sys/devices/virtual/video/sii6400/wihd/wvan/connection_status
+    chown root system /sys/devices/virtual/video/sii6400/wihd/wvan/scan_duration
+    chown root system /sys/devices/virtual/video/sii6400/wihd/wvan/scan_interval
+    chown root system /sys/devices/virtual/video/sii6400/debug_level
+    chown root system /sys/devices/virtual/video/sii6400/mhl/rap/out
+    chown root system /sys/devices/virtual/video/sii6400/mhl/rap/input_dev
+    chown root system /sys/devices/virtual/video/sii6400/mhl/rcp/out
+    chown root system /sys/devices/virtual/video/sii6400/mhl/rcp/input_dev
+    chown root system /sys/devices/virtual/video/sii6400/mhl/ucp/out
+    chown root system /sys/devices/virtual/video/sii6400/mhl/ucp/input_dev
+    chown root system /sys/devices/virtual/video/sii6400/devcap/local
+    chown root system /sys/devices/virtual/video/sii6400/devcap/local_offset
+    chown root system /sys/devices/virtual/video/sii6400/devcap/remote
+    chown root system /sys/devices/virtual/video/sii6400/devcap/remote_offset
+    chown root system /sys/devices/virtual/video/sii6400/wihd/hdcp/policy
+    chown root system /sys/devices/virtual/video/sii6400/wihd/hdcp/stream_type
+    chown root system /sys/devices/virtual/video/sii6400/wihd/remote_control/in
+    chown root system /sys/devices/virtual/video/sii6400/wihd/remote_control/out
+    chown root system /sys/devices/virtual/video/sii6400/wihd/remote_control/input_dev
+    chown root system /sys/devices/virtual/video/sii6400/wihd/self/connect_timeout
+    chown root system /sys/devices/virtual/video/sii6400/wihd/cec/out
+
+   # LiveDisplay
+    chown system system /sys/devices/virtual/graphics/fb0/rgb
+    chmod 664 /sys/devices/virtual/graphics/fb0/rgb
+
+    # load ufsd modules
+    insmod /system/lib/modules/jnl.ko
+    insmod /system/lib/modules/ufsd.ko
+
+    # sleep_sign used by DebugUtils APP
+    chown system system /sys/class/leds/blue/sleep_sign
+    chmod 0666 /sys/class/leds/blue/sleep_sign
+
+    setprop config.disable_vr false
+
+     # wake_gesture
+    chown system system /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input3/wake_gesture
+
+on post-fs
+    #change permissions for /dev/ssr_monitor_dev
+    chown system system /proc/ssr_monitor_dev
+    chmod 0666 /proc/ssr_monitor_dev
+
+    # Create a directory for Battery Daemon logs
+    mkdir /data/battd 0755 log log
+    # to mkdir for letv bootvideo feature
+    mkdir /data/fastplay 0777 system system
+
+# msm specific files that need to be created on /data
+on post-fs-data
+    # Create directories for Fingerprint
+    mkdir /data/misc/stargate 0770 system system
+    mkdir /data/misc/stargate/bg_estimation 0770 system system
+    mkdir /data/misc/stargate/calib_test 0770 system system
+    mkdir /data/misc/stargate/database 0770 system system
+
+service ptt_socket_app /system/bin/ptt_socket_app -d
+    class main
+    user root
+    group root
+    oneshot
+
+service ptt_ffbm /system/bin/ptt_socket_app -f -d
+    user root
+    group root
+    disabled
+    oneshot
+
+service wifi_fccutild /system/bin/wifi_fccutild
+    user system
+    group system inet net_admin
+    socket wififccutild_server dgram 0660 system system
+    disabled
+    oneshot
+
+service qcom-sh /system/bin/sh /init.qcom.sh
+    class late_start
+    user root
+    seclabel u:r:bluetooth_loader:s0
+    oneshot
+
+service qfp-boot /system/bin/sh /system/etc/qfp_boot.sh
+    class late_start
+    user root
+    group root
+    oneshot
+
+service qfp-daemon /system/bin/qfp-daemon
+    class late_start
+    user system
+    group system drmrpc diag input
+
+service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
+    class late_start
+    group radio wifi inet
+    disabled
+    seclabel u:r:bluetooth_loader:s0
+    oneshot
+
+on property:persist.data.ds_fmc_app.mode=1
+    start ds_fmc_appd
+
+service vm_bms /system/bin/vm_bms
+    user root
+    group root
+    disabled
+
+# letv
+on property:init.svc.qmuxd=running
+    start wifi_mac
+
+service wifi_mac /system/bin/logwrapper /system/bin/set_wifi_mac
+    class core
+    user root
+    oneshot
+
+on property:init.svc.bootanim=running
+    write /sys/class/leds/wled/brightness 4095
+
+#set nvm_service
+service nvm_service /system/bin/nvm_service
+    class core
+    disabled
+    oneshot
+    user root
+    group root
+
+on property:sys.boot_completed=1
+    start nvm_service
