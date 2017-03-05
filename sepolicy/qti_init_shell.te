@@ -1,6 +1,4 @@
 allow qti_init_shell kmsg_device:chr_file { write open };
 allow qti_init_shell diag_prop:property_service set;
 allow qti_init_shell self:socket create_socket_perms;
-allow qti_init_shell persist_qc_senseid_file:file r_file_perms;
-allow qti_init_shell persist_qc_senseid_file:dir r_dir_perms;
 qmux_socket(qti_init_shell)
