@@ -10,9 +10,6 @@ binder_use(ifaadaemon)
 #Allow servicemanager to interact with ifaadaemon
 binder_call(ifaadaemon, servicemanager)
 
-#Allow alipay_app to interact with ifaadaemon
-binder_call(ifaadaemon, alipay_app)
-
 #Mark ifaadaemon as a Binder service domain
 binder_service(ifaadaemon)
 
