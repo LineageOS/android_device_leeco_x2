@@ -463,6 +463,7 @@ vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
 
 # Radio - MBN
+etc/firmware/modem_pr/mbn_ota.txt
 etc/firmware/modem_pr/mcfg_sw_reliance.mbn
 etc/firmware/modem_pr/mcfg_sw_tmo.mbn
 etc/firmware/modem_pr/mcfg_sw_att.mbn
@@ -471,7 +472,6 @@ etc/firmware/modem_pr/mcfg_sw_cmcc.mbn
 etc/firmware/modem_pr/mcfg_sw_others.mbn
 etc/firmware/modem_pr/mcfg_sw_verizon.mbn
 etc/firmware/modem_pr/mcfg_sw_ct.mbn
-etc/firmware/modem_pr/mbn_upgrade_info
 etc/firmware/modem_pr/mcfg_sw_cu.mbn
 
 # More IMS?
