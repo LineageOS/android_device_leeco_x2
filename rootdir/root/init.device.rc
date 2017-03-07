@@ -146,12 +146,6 @@ service wifi_fccutild /system/bin/wifi_fccutild
     disabled
     oneshot
 
-service qcom-sh /system/bin/sh /init.qcom.sh
-    class late_start
-    user root
-    seclabel u:r:bluetooth_loader:s0
-    oneshot
-
 service qfp-boot /system/bin/sh /system/etc/qfp_boot.sh
     class late_start
     user root
