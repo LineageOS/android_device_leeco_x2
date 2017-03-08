@@ -491,10 +491,6 @@ vendor/lib/lib-rcsimssjni.so
 vendor/lib/libimscamera_jni.so
 vendor/lib/libimsmedia_jni.so
 
-# Sensors
-etc/sensors/hals.conf
-etc/sensors/sensor_def_qcomdev.conf
-
 # Signed graphics firmware
 etc/firmware/a530_zap.b00
 etc/firmware/a530_zap.b01
@@ -638,7 +634,6 @@ vendor/lib/libasn1crt.so
 vendor/lib/libasn1crtx.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libconfigdb.so
-vendor/lib/libcppf.so
 vendor/lib/libdisp-aba.so
 vendor/lib/libdrc.so
 vendor/lib/libextendedremotedisplay.so
