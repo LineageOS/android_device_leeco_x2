@@ -70,8 +70,6 @@ lib/libarcsoft_panorama_burstcapture.so
 lib/libarcsoft_smart_denoise.so
 lib/libBD_asr_model_cmn-Hans-CN_v1_camera.so
 lib/libcamera_letv_algo.so
-lib/libcameraservice.so
-lib64/libcameraservice.so
 lib/libLetvCameraImageSDK.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
