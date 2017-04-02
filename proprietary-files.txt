@@ -17,14 +17,6 @@ etc/acdbdata/Liquid/Liquid_Handset_cal.acdb
 etc/acdbdata/Liquid/Liquid_Hdmi_cal.acdb
 etc/acdbdata/Liquid/Liquid_Headset_cal.acdb
 etc/acdbdata/Liquid/Liquid_Speaker_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/letv/MTP_General_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Global_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/letv/workspaceFile.qwsp
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 etc/acdbdata/MTP/MTP_General_cal.acdb
 etc/acdbdata/MTP/MTP_Global_cal.acdb
@@ -32,6 +24,7 @@ etc/acdbdata/MTP/MTP_Handset_cal.acdb
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP/workspaceFile.qwsp
 etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 etc/acdbdata/QRD/QRD_General_cal.acdb
 etc/acdbdata/QRD/QRD_Global_cal.acdb
