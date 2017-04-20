@@ -19,7 +19,6 @@ ro.audio.flinger_standbytime_ms=300
 
 # Camera
 persist.camera.stats.test=5
-media.camera.ts.monotonic=0
 
 qcom.hw.aac.encoder=true
 
