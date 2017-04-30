@@ -2036,7 +2036,7 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-        <ctl name="ADC1 Volume" value="4" />
+        <ctl name="ADC1 Volume" value="12" />
     </path>
 
     <path name="handset-mic-db">
