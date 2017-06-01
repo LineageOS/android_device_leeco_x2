@@ -59,3 +59,17 @@ persist.loc.nlp_name=com.qualcomm.location
 # Screen Density
 ro.sf.lcd_density=560
 
+# Radio
+persist.data.iwlan.enable=true
+persist.radio.multisim.config=dsds
+persist.radio.cs_srv_type=0
+persist.radio.calls.on.ims=true
+persist.radio.jbims=true
+persist.rcs.supported=1
+persist.radio.domain.ps=false
+persist.radio.VT_ENABLE=1
+persist.radio.REVERSE_QMI=0
+persist.radio.ROTATION_ENABLE=1
+
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
