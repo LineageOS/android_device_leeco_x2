@@ -1,3 +1,11 @@
+allow qfp-daemon self:socket create_socket_perms;
+
+allow qfp-daemon persist_file:dir search;
+allow qfp-daemon sensors_persist_file:file r_file_perms;
+allow qfp-daemon sensors_persist_file:dir r_dir_perms;
+allow qfp-daemon diag_prop:file r_file_perms;
+allow qfp-daemon init:socket { bind read write };
+
 # R dir perms for persist qc_senseid dir
 r_dir_file(qfp-daemon, persist_file)
 r_dir_file(qfp-daemon, persist_qc_senseid_file)
