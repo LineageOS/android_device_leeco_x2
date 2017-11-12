@@ -165,7 +165,7 @@ service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
     class late_start
     group radio wifi inet
     disabled
-    seclabel u:r:bluetooth_loader:s0
+    #seclabel u:r:bluetooth_loader:s0
     oneshot
 
 on property:persist.data.ds_fmc_app.mode=1
