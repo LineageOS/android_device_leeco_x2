@@ -1,9 +1,8 @@
 #!/vendor/bin/sh
-# Copyright (c) 2016, The Linux Foundation. All rights reserved.
+# Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are
-# met:
+# modification, are permitted provided that the following conditions are met:
 #     * Redistributions of source code must retain the above copyright
 #       notice, this list of conditions and the following disclaimer.
 #     * Redistributions in binary form must reproduce the above
@@ -37,3 +36,12 @@ if [ ! -f /persist/qc_senseid/bge_upgrade_flag2 ]; then
     touch /persist/qc_senseid/bge_upgrade_flag2
 fi
 
+service tfa-sh /system/bin/init.tfa.sh /etc/silence_short.wav 15 1
+    class main
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start tfa-sh
