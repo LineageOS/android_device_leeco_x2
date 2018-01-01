@@ -75,6 +75,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+
+# TFA calibration
+PRODUCT_PACKAGES += \
+    tinyplay
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
