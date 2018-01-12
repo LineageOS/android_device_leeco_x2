@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2018 The The LineageOS Project
+# Copyright (C) 2017-2018 The The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,16 +25,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_x2
 PRODUCT_DEVICE := x2
-PRODUCT_MANUFACTURER := LeEco
+PRODUCT_MANUFACTURER := LeMobile
 PRODUCT_BRAND := LeEco
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=le_x2 \
-    PRODUCT_NAME=X2_CN \
-    PRIVATE_BUILD_DESC="le_x2_na-user 6.0.1 FIXNAOP5802011301S eng.letv.20161130.172052.wechatpay release-keys"
+    PRODUCT_NAME=LeMax2_WW \
+    PRIVATE_BUILD_DESC="le_x2-user 6.0.1 FKXOSOP5801910311S eng.letv.20161031.012138.wechatpay release-keys"
 
-BUILD_FINGERPRINT := LeEco/LeMax2_NA/le_x2_na:6.0.1/FIXNAOP5802011301S/letv11301725:user/release-keys
+BUILD_FINGERPRINT := LeEco/LeMax2_WW/le_x2:6.0.1/FKXOSOP5801910311S/letv10310125:user/release-keys
 
 TARGET_VENDOR := leeco
