@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8842286_2ffcb665",
+        "filename": "lineagehw/org/cyanogenmod/hardware/KeyDisabler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 18394
+      },
+      "writtenOn": "2018-01-12T06:08:27Z",
+      "side": 1,
+      "message": "* Copyright (C) 2017 The LineageOS Project",
+      "revId": "be8eebfea26ab0f8040db158d49946d125671228",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cfd93392_fe1bc091",
+        "filename": "lineagehw/org/cyanogenmod/hardware/KeyDisabler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 18394
+      },
+      "writtenOn": "2018-01-12T06:08:27Z",
+      "side": 1,
+      "message": "package org.lineageos.hardware;",
+      "revId": "be8eebfea26ab0f8040db158d49946d125671228",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
