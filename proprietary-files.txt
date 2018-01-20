@@ -12,7 +12,7 @@ etc/dts/dts-m6m8-lic.key:vendor/etc/dts/dts-m6m8-lic.key
 vendor/firmware/tfa98xx.cnt
 
 # Audio amplifier calibration sound - from gemini
-etc/silence_short.wav|12b2b5e31a1405c95f70b4e3e88d75d01e1ca883
+etc/silence_short.wav:vendor/etc/silence_short.wav|12b2b5e31a1405c95f70b4e3e88d75d01e1ca883
 
 # Bluetooth firmware
 vendor/firmware/nvm_tlv.bin
