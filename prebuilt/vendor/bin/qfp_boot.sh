@@ -36,7 +36,7 @@ if [ ! -f /persist/qc_senseid/bge_upgrade_flag2 ]; then
     touch /persist/qc_senseid/bge_upgrade_flag2
 fi
 
-service tfa-sh /system/bin/init.tfa.sh /etc/silence_short.wav 15 1
+service vendor.tfa-sh /vendor/bin/init.tfa.sh /vendor/etc/silence_short.wav 15 1
     class main
     user system
     group system
@@ -44,4 +44,4 @@ service tfa-sh /system/bin/init.tfa.sh /etc/silence_short.wav 15 1
     oneshot
 
 on property:sys.boot_completed=1
-    start tfa-sh
+    start vendor.tfa-sh
