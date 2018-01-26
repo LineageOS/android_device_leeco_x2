@@ -19,6 +19,8 @@ ro.audio.flinger_standbytime_ms=300
 
 # Camera
 persist.camera.stats.test=5
+persist.camera.preview.ubwc=0
+persist.camera.video.ubwc=0
 
 qcom.hw.aac.encoder=true
 
