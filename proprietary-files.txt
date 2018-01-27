@@ -32,7 +32,6 @@ etc/camera/imx230_lg_chromatix.xml
 etc/camera/msm8996_camera.xml
 etc/camera/ov8865_chromatix.xml
 etc/camera/ov8865_ofilm_chromatix.xml
-lib/hw/camera.msm8996.so
 lib/libarcsoft_beautyshot.so
 lib/libarcsoft_face_detection.so
 lib/libarcsoft_face_tracking.so
@@ -44,9 +43,6 @@ lib/libBD_asr_model_cmn-Hans-CN_v1_camera.so
 lib/libcamera_letv_algo.so
 lib/libLetvCameraImageSDK.so
 lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libqomx_core.so
 vendor/lib/libflash_i2c.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -574,7 +570,6 @@ vendor/lib64/libmmipstreamsourcehttp.so
 vendor/lib64/libmmipstreamutils.so
 vendor/lib64/mmi_flashlight.so
 
-
 # Other random files
 # Don't feel like categorizing them
 lib/libamipengine.so
@@ -583,15 +578,12 @@ lib/libarcimgutilsbase.so
 lib/libentryexstd.so
 lib/libextmedia_jni.so
 lib/libjpush219.so
-lib/liblog.so
-lib/libminui.so
 lib/libmksdk_platform_jni.so
 lib/libmpbase.so
 lib/libmpkernel.so
 lib/libmpstream.so
 lib/libmputility.so
 lib/libqrDec.so
-lib64/libminui.so
 vendor/lib/lib-dplmedia.so
 vendor/lib/lib-rcsjni.so
 vendor/lib/lib-rtpcommon.so
