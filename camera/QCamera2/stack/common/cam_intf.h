@@ -798,12 +798,13 @@ typedef struct {
     INCLUDE(CAM_INTF_META_LENS_FOCUS_RANGE,             float,                       2);
     INCLUDE(CAM_INTF_META_LENS_STATE,                   cam_af_lens_state_t,         1);
     INCLUDE(CAM_INTF_META_LENS_OPT_STAB_MODE,           uint32_t,                    1);
-    INCLUDE(CAM_INTF_META_VIDEO_STAB_MODE,              uint32_t,                    1);
+    //INCLUDE(CAM_INTF_META_VIDEO_STAB_MODE,              uint32_t,                    1);
     INCLUDE(CAM_INTF_META_LENS_FOCUS_STATE,             uint32_t,                    1);
     INCLUDE(CAM_INTF_META_NOISE_REDUCTION_MODE,         uint32_t,                    1);
     INCLUDE(CAM_INTF_META_NOISE_REDUCTION_STRENGTH,     uint32_t,                    1);
     INCLUDE(CAM_INTF_META_SCALER_CROP_REGION,           cam_crop_region_t,           1);
     INCLUDE(CAM_INTF_META_SCENE_FLICKER,                uint32_t,                    1);
+    INCLUDE(CAM_INTF_META_VIDEO_STAB_MODE,              uint32_t,                    1); // LeEco
     INCLUDE(CAM_INTF_META_SENSOR_EXPOSURE_TIME,         int64_t,                     1);
     INCLUDE(CAM_INTF_META_SENSOR_FRAME_DURATION,        int64_t,                     1);
     INCLUDE(CAM_INTF_META_SENSOR_SENSITIVITY,           int32_t,                     1);
@@ -903,7 +904,7 @@ typedef struct {
     INCLUDE(CAM_INTF_PARM_BURST_LED_ON_PERIOD,          uint32_t,                    1);
     INCLUDE(CAM_INTF_PARM_LONGSHOT_ENABLE,              int8_t,                      1);
     INCLUDE(CAM_INTF_PARM_TONE_MAP_MODE,                uint32_t,                    1);
-    INCLUDE(CAM_INTF_META_TOUCH_AE_RESULT,              int32_t,                     1);
+    //INCLUDE(CAM_INTF_META_TOUCH_AE_RESULT,              int32_t,                     1);
 
     /* HAL3 specific */
     INCLUDE(CAM_INTF_META_STREAM_INFO,                  cam_stream_size_info_t,      1);
@@ -923,6 +924,7 @@ typedef struct {
     INCLUDE(CAM_INTF_PARM_STATS_AF_PAAF,                uint32_t,                    1);
     INCLUDE(CAM_INTF_PARM_FOCUS_BRACKETING,             cam_af_bracketing_t,         1);
     INCLUDE(CAM_INTF_PARM_FLASH_BRACKETING,             cam_flash_bracketing_t,      1);
+    INCLUDE(CAM_INTF_META_TOUCH_AE_RESULT,              int32_t,                     1); // LeEco
     INCLUDE(CAM_INTF_META_JPEG_GPS_COORDINATES,         double,                      3);
     INCLUDE(CAM_INTF_META_JPEG_GPS_PROC_METHODS,        uint8_t,                     GPS_PROCESSING_METHOD_SIZE);
     INCLUDE(CAM_INTF_META_JPEG_GPS_TIMESTAMP,           int64_t,                     1);
