@@ -375,11 +375,14 @@ etc/firmware/widevine.mbn
 etc/firmware/widevine.mdt
 
 # Fingerprint sensor
+-app/QFingerprintService/QFingerprintService.apk
+bin/qfp-daemon:vendor/bin/qfp-daemon
 etc/stargate/qfp_config.txt
 lib64/hw/fingerprint.msm8996.so
-vendor/lib64/qfp.wakeup.so
-bin/qfp-daemon:vendor/bin/qfp-daemon
 vendor/lib64/libqfp-service.so
+vendor/lib64/hw/fingerprint.qcom.so
+vendor/lib64/libqfp-service.so
+vendor/lib64/qfp.wakeup.so
 
 # Radio - MBN
 etc/firmware/modem_pr/mbn_upgrade_info
