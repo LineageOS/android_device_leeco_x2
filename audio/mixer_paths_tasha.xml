@@ -2097,7 +2097,7 @@
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="RX0 Digital Volume" value="81" />
+        <ctl name="RX0 Digital Volume" value="95" />
         <ctl name="ANC Slot" value="6" />
         <ctl name="ADC MUX10" value="AMIC" />
         <ctl name="AMIC MUX10" value="ADC5" />
