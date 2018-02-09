@@ -161,7 +161,7 @@ service qfp-boot /system/bin/sh /system/etc/qfp_boot.sh
 service qfp-daemon /vendor/bin/qfp-daemon
     class late_start
     user system
-    group system drmrpc diag input
+    group system drmrpc diag input sdcard_rw
 
 service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
     class late_start

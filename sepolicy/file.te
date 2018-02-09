@@ -1,0 +1,2 @@
+type fpc_data_file, file_type;
+type persist_qc_senseid_file, file_type;

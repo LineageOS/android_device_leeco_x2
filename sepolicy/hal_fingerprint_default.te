@@ -1,0 +1,2 @@
+allow hal_fingerprint_default iqfp_service:service_manager find;
+allow hal_fingerprint_default qfp-daemon:binder { call transfer };
