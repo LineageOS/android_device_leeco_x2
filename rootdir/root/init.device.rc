@@ -26,8 +26,6 @@
 #
 
 on init
-    export LD_SHIM_LIBS "/system/vendor/lib/libmmcamera_ppeiscore.so|libshims_camera.so:/system/bin/mm-qcamera-daemon|libshims_qcamera-daemon.so"
-
     # to create a link for /data/fastplay
     symlink /data/fastplay /video
 
