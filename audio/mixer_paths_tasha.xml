@@ -2412,8 +2412,8 @@
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC5" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC5 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="18" />
+        <ctl name="ADC5 Volume" value="18" />
     </path>
 
     <path name="hdmi-tx">
