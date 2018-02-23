@@ -26,7 +26,6 @@ etc/firmware/rampatch_tlv_3.2.tlv
 #Misc
 etc/firmware/sii6400_wihd_mhl.fw
 
-
 # Camera
 bin/mm-qcamera-daemon
 etc/camera/imx230_chromatix.xml
@@ -89,6 +88,8 @@ vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_hvx_zzHDR.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
+vendor/lib/libmmcamera_imx230.so
+vendor/lib/libmmcamera_imx230_lg.so
 vendor/lib/libmmcamera_isp_abf47.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -141,6 +142,8 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_sony_imx230_eeprom.so
+vendor/lib/libmmcamera_sony_imx230_plus_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -161,7 +164,6 @@ vendor/lib/libmmcamera_imx230_sunny.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
 vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
 vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
-
 
 # Camera actuators
 vendor/lib/libactuator_ak7371.so
@@ -300,12 +302,6 @@ vendor/lib/libchromatix_ov8865_video_full.so
 vendor/lib/libchromatix_ov8865_zsl_preview.so
 vendor/lib/libchromatix_ov8865_zsl_video.so
 
-
-vendor/lib/libmmcamera_imx230.so
-vendor/lib/libmmcamera_imx230_lg.so
-vendor/lib/libmmcamera_sony_imx230_eeprom.so
-vendor/lib/libmmcamera_sony_imx230_plus_eeprom.so
-
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
@@ -362,6 +358,9 @@ vendor/lib/libmmcamera_isp_sub_module.so
 
 # Display calibration
 vendor/lib/libdisp-aba.so
+vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
+vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml
+vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 
 #DRM
 etc/firmware/widevine.b00

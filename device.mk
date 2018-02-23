@@ -49,19 +49,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/atmel_mxt_T100_touchscreen.kl:system/usr/keylayout/atmel_mxt_T100_touchscreen.kl \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl
 
-# Display xml
-PRODUCT_PACKAGES += \
-    qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml \
-    qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml \
-    qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
-
-# QMI
-PRODUCT_PACKAGES += \
-    dsi_config.xml \
-    netmgr_config.xml \
-    qmi_config.xml \
-
-
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
