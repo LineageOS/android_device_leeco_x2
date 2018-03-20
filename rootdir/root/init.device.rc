@@ -51,7 +51,9 @@ on boot
 
     # Chown led nodes as needed from UI running on system server
     chown system system /sys/class/leds/button-backlight/brightness
-    chown system system /sys/class/leds/torch-light1/brightness
+    chown cameraserver camera /sys/devices/soc/soc:qcom,camera-flash/flashled1
+    chown cameraserver camera /sys/devices/soc/soc:qcom,camera-flash/flashled2
+
 
     # Chown for backlight
     chown system system /sys/class/leds/lcd-backlight/brightness
