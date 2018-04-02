@@ -1,3 +1,7 @@
+# Qualcomm Assertive Display
+etc/ad_calib.cfg
+etc/ad_calib_x2.cfg
+
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -11,8 +15,7 @@ etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key
 etc/firmware/tfa98xx.cnt
 
-# Firmware
-# Bluetooth
+# Bluetooth Firmware
 etc/firmware/nvm_tlv.bin
 etc/firmware/nvm_tlv_1.3.bin
 etc/firmware/nvm_tlv_2.1.bin
@@ -23,14 +26,14 @@ etc/firmware/rampatch_tlv_1.3.tlv
 etc/firmware/rampatch_tlv_2.1.tlv
 etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
-#Misc
-etc/firmware/sii6400_wihd_mhl.fw
 
 # Camera
 bin/mm-qcamera-daemon
 etc/camera/imx230_chromatix.xml
 etc/camera/imx230_lg_chromatix.xml
 etc/camera/imx230_sunny_chromatix.xml
+etc/camera/LeMax2Large.png
+etc/camera/LeMax2Small.png
 etc/camera/msm8996_camera.xml
 etc/camera/ov8865_chromatix.xml
 etc/camera/ov8865_ofilm_chromatix.xml
@@ -56,7 +59,6 @@ lib/libmputility.so
 lib/libqrDec.so
 lib/libzeusisCameraAlgoSceneDetection.so
 vendor/lib/libflash_i2c.so
-vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -65,8 +67,8 @@ vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_memleak.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
@@ -86,57 +88,14 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_hvx_zzHDR.so
-vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imx230.so
+vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imx230_lg.so
-vendor/lib/libmmcamera_isp_abf47.so
-vendor/lib/libmmcamera_isp_aec_bg_stats47.so
-vendor/lib/libmmcamera_isp_bf_stats47.so
-vendor/lib/libmmcamera_isp_bg_stats46.so
-vendor/lib/libmmcamera_isp_bhist_stats44.so
-vendor/lib/libmmcamera_isp_black_level47.so
-vendor/lib/libmmcamera_isp_bpc47.so
-vendor/lib/libmmcamera_isp_cac47.so
-vendor/lib/libmmcamera_isp_chroma_enhan40.so
-vendor/lib/libmmcamera_isp_chroma_suppress40.so
-vendor/lib/libmmcamera_isp_clamp_encoder40.so
-vendor/lib/libmmcamera_isp_clamp_video40.so
-vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
-vendor/lib/libmmcamera_isp_color_correct46.so
-vendor/lib/libmmcamera_isp_color_xform_encoder46.so
-vendor/lib/libmmcamera_isp_color_xform_video46.so
-vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so
-vendor/lib/libmmcamera_isp_cs_stats46.so
-vendor/lib/libmmcamera_isp_demosaic47.so
-vendor/lib/libmmcamera_isp_demux40.so
-vendor/lib/libmmcamera_isp_fovcrop_encoder46.so
-vendor/lib/libmmcamera_isp_fovcrop_video46.so
-vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so
-vendor/lib/libmmcamera_isp_gamma44.so
-vendor/lib/libmmcamera_isp_gic46.so
-vendor/lib/libmmcamera_isp_gtm46.so
-vendor/lib/libmmcamera_isp_hdr46.so
-vendor/lib/libmmcamera_isp_hdr_be_stats46.so
-vendor/lib/libmmcamera_isp_ihist_stats46.so
-vendor/lib/libmmcamera_isp_linearization40.so
-vendor/lib/libmmcamera_isp_ltm47.so
-vendor/lib/libmmcamera_isp_mce40.so
-vendor/lib/libmmcamera_isp_mesh_rolloff44.so
-vendor/lib/libmmcamera_isp_pedestal_correct46.so
-vendor/lib/libmmcamera_isp_rs_stats46.so
-vendor/lib/libmmcamera_isp_scaler_encoder46.so
-vendor/lib/libmmcamera_isp_scaler_video46.so
-vendor/lib/libmmcamera_isp_scaler_viewfinder46.so
-vendor/lib/libmmcamera_isp_sce40.so
-vendor/lib/libmmcamera_isp_snr47.so
-vendor/lib/libmmcamera_isp_sub_module.so
-vendor/lib/libmmcamera_ov8865.so
+vendor/lib/libmmcamera_imx230.so
+vendor/lib/libmmcamera_imx230_sunny.so
 vendor/lib/libmmcamera_ov8865_eeprom.so
 vendor/lib/libmmcamera_ov8865_ofilm.so
-vendor/lib/libmmcamera_ov8865_ofilm_plus.so
-vendor/lib/libmmcamera_ov8865_plus_eeprom.so
-vendor/lib/libmmcamera_ov8865_sunny.so
+vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
@@ -144,47 +103,32 @@ vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_sony_imx230_eeprom.so
 vendor/lib/libmmcamera_sony_imx230_plus_eeprom.so
-vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
+vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
-vendor/lib/libSonyIMX230PdafLibrary.so
 vendor/lib/libSonyIMX230_lg_PdafLibrary.so
+vendor/lib/libSonyIMX230PdafLibrary.so
 vendor/lib/libSonyIMX230_sunny_PdafLibrary.so
 vendor/lib/libStDrvInt.so
-vendor/lib/libmmcamera_imx230_sunny.so
-vendor/lib/libmmcamera_sunny_8865_eeprom.so
-vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
-vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
 
 # Camera actuators
-vendor/lib/libactuator_ak7371.so
 vendor/lib/libactuator_bu63165.so
-vendor/lib/libactuator_bu64297.so
-vendor/lib/libactuator_dw9714.so
-vendor/lib/libactuator_dw9800w.so
 vendor/lib/libactuator_lc898122.so
 vendor/lib/libactuator_lc898212xd.so
 
 # Camera OIS
-vendor/lib/libois_bu24218.so
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
 # Camera chromatix
-vendor/lib/libchromatix_csidtg_common.so
-vendor/lib/libchromatix_csidtg_cpp_preview.so
-vendor/lib/libchromatix_csidtg_postproc.so
-vendor/lib/libchromatix_csidtg_preview.so
-vendor/lib/libchromatix_csidtg_zsl_preview.so
 vendor/lib/libchromatix_imx230_1080p_preview_lc898212xd.so
 vendor/lib/libchromatix_imx230_1080p_video_lc898212xd.so
 vendor/lib/libchromatix_imx230_4k_preview_lc898212xd.so
@@ -340,8 +284,8 @@ vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so
 vendor/lib/libmmcamera_isp_gamma44.so
 vendor/lib/libmmcamera_isp_gic46.so
 vendor/lib/libmmcamera_isp_gtm46.so
-vendor/lib/libmmcamera_isp_hdr_be_stats46.so
 vendor/lib/libmmcamera_isp_hdr46.so
+vendor/lib/libmmcamera_isp_hdr_be_stats46.so
 vendor/lib/libmmcamera_isp_ihist_stats46.so
 vendor/lib/libmmcamera_isp_linearization40.so
 vendor/lib/libmmcamera_isp_ltm47.so
@@ -357,21 +301,25 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # Display calibration
-vendor/lib/libdisp-aba.so
 vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml
 vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
+vendor/lib64/libmm-qdcm-diag.so
 
 #DRM
-etc/firmware/widevine.b00
-etc/firmware/widevine.b01
-etc/firmware/widevine.b02
-etc/firmware/widevine.b03
-etc/firmware/widevine.b04
-etc/firmware/widevine.b05
-etc/firmware/widevine.b06
-etc/firmware/widevine.mbn
-etc/firmware/widevine.mdt
+etc/firmware/cppf.b00
+etc/firmware/cppf.b01
+etc/firmware/cppf.b02
+etc/firmware/cppf.b03
+etc/firmware/cppf.b04
+etc/firmware/cppf.b05
+etc/firmware/cppf.b06
+etc/firmware/cppf.mbn
+etc/firmware/cppf.mdt
+vendor/lib/libmdtp.so
+vendor/lib/libmdtp_crypto.so
+vendor/lib64/libmdtp.so
+vendor/lib64/libmdtp_crypto.so
 
 # Fingerprint sensor
 -app/QFingerprintService/QFingerprintService.apk
@@ -382,6 +330,13 @@ vendor/lib64/libqfp-service.so
 vendor/lib64/hw/fingerprint.qcom.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
+
+# NFC Firmware
+etc/firmware/nfc_test.bin
+etc/firmware/Signedrompatch_v20.bin
+etc/firmware/Signedrompatch_v21.bin
+etc/firmware/Signedrompatch_v24.bin
+etc/firmware/Signedrompatch_v30.bin
 
 # Radio - MBN
 etc/firmware/modem_pr/mbn_upgrade_info
@@ -396,15 +351,6 @@ etc/firmware/modem_pr/mcfg_sw_tmo.mbn
 etc/firmware/modem_pr/mcfg_sw_verizon.mbn
 
 # Signed graphics firmware
-vendor/firmware/a225_pfp.fw
-vendor/firmware/a225_pm4.fw
-vendor/firmware/a225p5_pm4.fw
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
-vendor/firmware/a420_pfp.fw
-vendor/firmware/a420_pm4.fw
 vendor/firmware/a530_gpmu.fw2
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
@@ -419,6 +365,12 @@ vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 
+# USB
+etc/firmware/cyccg.cybin
+etc/firmware/cyccg_table.cybin
+etc/firmware/sii6400_wihd_mhl.fw
+
+# Unsorted
 bin/ATFWD-daemon
 bin/ftmdaemon
 bin/ks
@@ -426,41 +378,24 @@ bin/ppd
 bin/ssr_diag
 bin/ssr_setup
 bin/tloc_daemon
-bin/hvdcp_opti
-etc/ad_calib.cfg
-etc/ad_calib_x2.cfg
 etc/batt_info_show_conf.xml
 etc/battd_psy.conf
 etc/capability.xml
 etc/cdma_call_conf.xml
 etc/ecc_conf.xml
-etc/firmware/Signedrompatch_v20.bin
-etc/firmware/Signedrompatch_v21.bin
-etc/firmware/Signedrompatch_v24.bin
-etc/firmware/Signedrompatch_v30.bin
-etc/firmware/cppf.b00
-etc/firmware/cppf.b01
-etc/firmware/cppf.b02
-etc/firmware/cppf.b03
-etc/firmware/cppf.b04
-etc/firmware/cppf.b05
-etc/firmware/cppf.b06
-etc/firmware/cppf.mbn
-etc/firmware/cppf.mdt
-etc/firmware/cyccg.cybin
-etc/firmware/cyccg_table.cybin
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-etc/firmware/nfc_test.bin
-etc/firmware/sii6400_wihd_mhl.fw
-etc/qxdm/1.cfg
-etc/qxdm/gps_log.cfg
-etc/mixer_paths_letv.xml
 etc/qvop/antispoofing.bin
 etc/qvop/cmudict.bin
 etc/qvop/noisesample.bin
 etc/qvop/poc_64_hmm.gmm
 etc/qxdm/1.cfg
+etc/qxdm/2.cfg
+etc/qxdm/gps.cfg
+etc/qxdm/gps_log.cfg
+etc/qxdm/modem.cfg
+etc/qxdm/modem+gps.cfg
+etc/qxdm/sensor.cfg
 etc/stargate/image_quality/templates/template1.pgm
 etc/stargate/wakeup/templates/template_imaginary.bin
 etc/stargate/wakeup/templates/template_real.bin
@@ -485,16 +420,11 @@ etc/UEISettings
 etc/init.uei.sh
 vendor/bin/mdtpd
 vendor/bin/mm-pp-daemon
-vendor/lib/libmdtp.so
-vendor/lib/libmdtp_crypto.so
 vendor/lib/libqcproximity.so
 vendor/lib/libual.so
 vendor/lib/libualutil.so
 vendor/lib/libusndroute.so
-vendor/lib64/libmdtp.so
-vendor/lib64/libmdtp_crypto.so
 vendor/lib64/libmm-dspp-utils.so
-vendor/lib64/libmm-qdcm-diag.so
 vendor/lib64/libqcproximity.so
 vendor/lib64/libual.so
 vendor/lib64/libualutil.so
