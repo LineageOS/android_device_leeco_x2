@@ -13,19 +13,19 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/workspaceFile.qwsp
 etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key
-etc/firmware/tfa98xx.cnt
+vendor/firmware/tfa98xx.cnt
 
 # Bluetooth Firmware
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv
+vendor/firmware/nvm_tlv.bin
+vendor/firmware/nvm_tlv_1.3.bin
+vendor/firmware/nvm_tlv_2.1.bin
+vendor/firmware/nvm_tlv_3.0.bin
+vendor/firmware/nvm_tlv_3.2.bin
+vendor/firmware/rampatch_tlv.img
+vendor/firmware/rampatch_tlv_1.3.tlv
+vendor/firmware/rampatch_tlv_2.1.tlv
+vendor/firmware/rampatch_tlv_3.0.tlv
+vendor/firmware/rampatch_tlv_3.2.tlv
 
 # Camera
 bin/mm-qcamera-daemon
@@ -225,15 +225,15 @@ vendor/lib/libchromatix_ov8865_zsl_preview.so
 vendor/lib/libchromatix_ov8865_zsl_video.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+vendor/firmware/cpp_firmware_v1_1_1.fw
+vendor/firmware/cpp_firmware_v1_1_6.fw
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_2_0.fw
+vendor/firmware/cpp_firmware_v1_4_0.fw
+vendor/firmware/cpp_firmware_v1_5_0.fw
+vendor/firmware/cpp_firmware_v1_5_2.fw
+vendor/firmware/cpp_firmware_v1_6_0.fw
+vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_isp_abf47.so
@@ -285,15 +285,15 @@ vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/lib64/libmm-qdcm-diag.so
 
 #DRM
-etc/firmware/cppf.b00
-etc/firmware/cppf.b01
-etc/firmware/cppf.b02
-etc/firmware/cppf.b03
-etc/firmware/cppf.b04
-etc/firmware/cppf.b05
-etc/firmware/cppf.b06
-etc/firmware/cppf.mbn
-etc/firmware/cppf.mdt
+vendor/firmware/cppf.b00
+vendor/firmware/cppf.b01
+vendor/firmware/cppf.b02
+vendor/firmware/cppf.b03
+vendor/firmware/cppf.b04
+vendor/firmware/cppf.b05
+vendor/firmware/cppf.b06
+vendor/firmware/cppf.mbn
+vendor/firmware/cppf.mdt
 vendor/lib/libmdtp.so
 vendor/lib/libmdtp_crypto.so
 vendor/lib64/libmdtp.so
@@ -310,23 +310,23 @@ vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
 
 # NFC Firmware
-etc/firmware/nfc_test.bin
-etc/firmware/Signedrompatch_v20.bin
-etc/firmware/Signedrompatch_v21.bin
-etc/firmware/Signedrompatch_v24.bin
-etc/firmware/Signedrompatch_v30.bin
+vendor/firmware/nfc_test.bin
+vendor/firmware/Signedrompatch_v20.bin
+vendor/firmware/Signedrompatch_v21.bin
+vendor/firmware/Signedrompatch_v24.bin
+vendor/firmware/Signedrompatch_v30.bin
 
 # Radio - MBN
-etc/firmware/modem_pr/mbn_upgrade_info
-etc/firmware/modem_pr/mcfg_sw_att.mbn
-etc/firmware/modem_pr/mcfg_sw_cmcc.mbn
-etc/firmware/modem_pr/mcfg_sw_ct.mbn
-etc/firmware/modem_pr/mcfg_sw_cu.mbn
-etc/firmware/modem_pr/mcfg_sw_others.mbn
-etc/firmware/modem_pr/mcfg_sw_reliance.mbn
-etc/firmware/modem_pr/mcfg_sw_sprint.mbn
-etc/firmware/modem_pr/mcfg_sw_tmo.mbn
-etc/firmware/modem_pr/mcfg_sw_verizon.mbn
+vendor/firmware/modem_pr/mbn_upgrade_info
+vendor/firmware/modem_pr/mcfg_sw_att.mbn
+vendor/firmware/modem_pr/mcfg_sw_cmcc.mbn
+vendor/firmware/modem_pr/mcfg_sw_ct.mbn
+vendor/firmware/modem_pr/mcfg_sw_cu.mbn
+vendor/firmware/modem_pr/mcfg_sw_others.mbn
+vendor/firmware/modem_pr/mcfg_sw_reliance.mbn
+vendor/firmware/modem_pr/mcfg_sw_sprint.mbn
+vendor/firmware/modem_pr/mcfg_sw_tmo.mbn
+vendor/firmware/modem_pr/mcfg_sw_verizon.mbn
 
 # Signed graphics firmware
 vendor/firmware/a530_gpmu.fw2
@@ -344,9 +344,9 @@ vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 
 # USB
-etc/firmware/cyccg.cybin
-etc/firmware/cyccg_table.cybin
-etc/firmware/sii6400_wihd_mhl.fw
+vendor/firmware/cyccg.cybin
+vendor/firmware/cyccg_table.cybin
+vendor/firmware/sii6400_wihd_mhl.fw
 
 # Unsorted
 bin/ATFWD-daemon
@@ -361,8 +361,8 @@ etc/battd_psy.conf
 etc/capability.xml
 etc/cdma_call_conf.xml
 etc/ecc_conf.xml
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
 etc/qvop/antispoofing.bin
 etc/qvop/cmudict.bin
 etc/qvop/noisesample.bin
