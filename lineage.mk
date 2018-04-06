@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2018 The The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from device
+# Inherit from x2 device
 $(call inherit-product, device/leeco/x2/device.mk)
 
 # Inherit some common LineageOS stuff.
@@ -24,16 +25,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_x2
 PRODUCT_DEVICE := x2
-PRODUCT_MANUFACTURER := LeMobile
+PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
 
-PRODUCT_GMS_CLIENTID_BASE := android-letv
-
-TARGET_VENDOR_PRODUCT_NAME := LeMax2
-TARGET_VENDOR_DEVICE_NAME := le_x2
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=le_x2 PRODUCT_NAME=LeMax2
+PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=le_x2 \
+    PRODUCT_NAME=X2_CN \
     PRIVATE_BUILD_DESC="le_x2_na-user 6.0.1 FIXNAOP5802011301S eng.letv.20161130.172052.wechatpay release-keys"
 
 BUILD_FINGERPRINT := LeEco/LeMax2_NA/le_x2_na:6.0.1/FIXNAOP5802011301S/letv11301725:user/release-keys
