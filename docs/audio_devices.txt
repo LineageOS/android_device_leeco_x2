@@ -1,0 +1,129 @@
+Handset Voice Call:
+snd_device(23: voice-handset)
+snd_device(103: voice-rec-dmic-ef-fluence)
+acdb_rx = 7
+acdb_tx = 41
+PLAYBACK app_type 69937
+
+Speaker Voice Call:
+snd_device(25: voice-speaker-nb)
+snd_device(83: voice-speaker-mic)
+acdb_rx = 14
+acdb_tx = 42
+PLAYBACK app_type 69937
+
+Speaker Musik:
+out_snd_device(2: speaker)
+acdb_id = 14
+compress-offload-playback
+PLAYBACK app_type 69937
+
+Headphone Musik:
+out_snd_device(9: headphones)
+acdb_id = 10
+PLAYBACK app_type 69937
+
+Headphone Voice Call:
+out_snd_device(33: voice-headphones)
+in_snd_device(85: voice-headset-mic)
+acdb_rx = 10
+acdb_tx = 8
+PLAYBACK app_type 69937
+
+Handset Voice Rec:
+in_snd_device(99: voice-rec-mic)
+acdb_id = 40
+CAPTURE app_type 69938
+
+Headset Voice Rec:
+in_snd_device(81: headset-mic)
+acdb_id = 8
+CAPTURE app_type 69938
+
+Handset Audio Rec:
+in_snd_device(61: handset-mic)
+acdb_id = 34
+CAPTURE app_type 69938
+
+Camcorder Video Rec:
+snd_device(92: camcorder-mic)
+acdb_id = 52
+CAPTURE app_type 69938
+
+LeCamera Video Rec:
+in_snd_device(92: camcorder-mic)
+acdb_id = 52
+CAPTURE app_type 69938
+
+Footej Microphone Audio Source Video Rec:
+in_snd_device(61: handset-mic)
+acdb_id = 34
+CAPTURE app_type 69938
+
+Footej Microphone Audio Source Tuned Video Rec:
+in_snd_device(92: camcorder-mic)
+acdb_id = 52
+CAPTURE app_type 69938
+
+Telegram quicktile Video Rec:
+in_snd_device(61: handset-mic)
+acdb_id = 34
+CAPTURE app_type 69938
+
+Telegram quicktile Video With Headset Video Rec:
+in_snd_device(80: headset-backmic)
+acdb_id = 8
+CAPTURE app_type 69938
+
+Telegram quicktile Audio Rec:
+in_snd_device(61: handset-mic)
+acdb_id = 34
+CAPTURE app_type 69938
+
+Telegram quicktile Audio With Headset Rec:
+in_snd_device(80: headset-backmic)
+acdb_id = 8
+CAPTURE app_type 69938
+
+Telegram handset VoIP Call Out:
+out_snd_device(23: voice-handset)
+in_snd_device(103: voice-rec-dmic-ef-fluence)
+acdb_id = 7
+acdb_id = 41
+PLAYBACK app_type 69937
+CAPTURE app_type 69938
+platform_set_echo_reference: enabling echo-reference
+
+Telegram speaker VoIP Call Out:
+out_snd_device(25: voice-speaker-nb)
+in_snd_device(83: voice-speaker-mic)
+acdb_id = 14
+acdb_id = 42
+PLAYBACK app_type 69937
+CAPTURE app_type 69938
+platform_set_echo_reference: enabling echo-reference-audio-ec-speaker
+
+Telegram handset VoIP Call In (broken?):
+out_snd_device(23: voice-handset)
+in_snd_device(65: handset-mic)
+acdb_rx = 7
+acdb_tx = 41
+
+Telegram speaker VoIP Call In (broken?):
+out_snd_device(25: voice-speaker-nb)
+in_snd_device(83: voice-speaker-mic)
+acdb_rx = 14
+acdb_tx = 42
+platform_set_echo_reference: enabling echo-reference-audio-ec-speaker
+
+Voice CDLA Call (CDLA HD disables and lights go off on CDLA headset and uses these settings):
+out_snd_device(33: voice-headphones)
+in_snd_device(85: voice-headset-mic)
+acdb_rx = 10
+acdb_tx = 8
+
+Facebook Messenger VoIP call Bluetooth In & Out:
+out_snd_device(37: bt-sco-headset)
+in_snd_device(88: bt-sco-mic)
+acdb_rx = 22
+acdb_tx = 122
