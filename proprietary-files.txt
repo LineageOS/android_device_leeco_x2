@@ -377,7 +377,6 @@ etc/qxdm/sensor.cfg
 etc/stargate/image_quality/templates/template1.pgm
 etc/stargate/wakeup/templates/template_imaginary.bin
 etc/stargate/wakeup/templates/template_real.bin
-etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 etc/wifi/fstman.ini
 etc/usf/form_factor_mtp.cfg
 etc/usf/mixer/mixer_paths_mtp.xml
