@@ -2,25 +2,7 @@
 ro.config.product=x2
 ro.internal.model=Le X820
 ro.config.le_hardware_version=HW_1.0.0
-ro.le.mtpname=Le Max2
-
-persist.sys.media.use-awesome=1
-sys.keep_app_1=com.bel.android.dspmanager
-ro.audio.samplerate=48000
-ro.audio.pcm.samplerate=48000
-af.resampler.quality=255
-af.resample=52000
-persist.audio.vr.enable=false
-persist.audio.handset.mic=analog
-persist.audio.lowlatency.rec=false
-persist.audio.dualmic.config=false
-
-ro.audio.flinger_standbytime_ms=300
-
-# Camera
-persist.camera.stats.test=5
-
-qcom.hw.aac.encoder=true
+ro.display.series=Le Max2
 
 # Fingerprint
 persist.qfp=true
@@ -53,23 +35,8 @@ persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 # Apical AD
 ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
 
-# GPS
-persist.loc.nlp_name=com.qualcomm.location
-
 # Screen Density
 ro.sf.lcd_density=560
 
 # Radio
-persist.data.iwlan.enable=true
 persist.radio.multisim.config=dsds
-persist.radio.cs_srv_type=0
-persist.radio.calls.on.ims=true
-persist.radio.jbims=true
-persist.rcs.supported=1
-persist.radio.domain.ps=false
-persist.radio.VT_ENABLE=1
-persist.radio.REVERSE_QMI=0
-persist.radio.ROTATION_ENABLE=1
-
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
