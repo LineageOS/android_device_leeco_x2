@@ -31,29 +31,19 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
         <item>5</item>
-        <item>7</item>
-        <item>8</item>
         <item>10</item>
         <item>20</item>
-        <item>75</item>
-        <item>100</item>
-        <item>200</item>
-        <item>300</item>
-        <item>400</item>
-        <item>500</item>
-        <item>800</item>
+        <item>40</item>
+        <item>120</item>
+        <item>350</item>
+        <item>600</item>
         <item>1000</item>
-        <item>1300</item>
+        <item>1600</item>
         <item>3000</item>
-        <item>4000</item>
-        <item>8000</item>
         <item>10000</item>
-        <item>20000</item>
-        <item>30000</item>
+        <item>12000</item>
+
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -61,31 +51,20 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>12</item>
-        <item>15</item>
-        <item>20</item>
-        <item>29</item>
-        <item>39</item>
-        <item>49</item>
-        <item>59</item>
-        <item>69</item>
-        <item>79</item>
-        <item>89</item>
-        <item>99</item>
-        <item>110</item>
-        <item>130</item>
-        <item>145</item>
-        <item>160</item>
-        <item>180</item>
-        <item>200</item>
-        <item>220</item>
-        <item>255</item>
+        <item>1</item>     <!-- 0 -->
+        <item>8</item>     <!-- 1-4 -->
+        <item>14</item>    <!-- 5-9 -->
+        <item>18</item>    <!-- 10-19 -->
+        <item>27</item>    <!-- 20-39 -->
+        <item>39</item>    <!-- 40-119 -->
+        <item>53</item>    <!-- 120-349 -->
+        <item>82</item>    <!-- 350-599 -->
+        <item>118</item>   <!-- 600-999 -->
+        <item>135</item>   <!-- 1000-1599 -->
+        <item>161</item>   <!-- 1600-2999 -->
+        <item>193</item>   <!-- 3000-9999 -->
+        <item>235</item>   <!-- 10000-11999 -->
+        <item>255</item>   <!-- 12000+ -->
     </integer-array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
@@ -93,8 +72,11 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
+
+    <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
+    <integer name="config_autoBrightnessLightSensorRate">250</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
@@ -106,11 +88,23 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">53</integer>
+    <integer name="config_screenBrightnessSettingDefault">122</integer>
+
+    <!-- Period of time in which to consider light samples in milliseconds. -->
+    <integer name="config_autoBrightnessAmbientLightHorizon">10000</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">5</integer>
+    <integer name="config_screenBrightnessDim">10</integer>
+
+    <!-- Minimum allowable screen brightness to use in a very dark room.
+         This value sets the floor for the darkest possible auto-brightness
+         adjustment.  It is expected to be somewhat less than the first entry in
+         config_autoBrightnessLcdBacklightValues so as to allow the user to have
+         some range of adjustment to dim the screen further than usual in very
+         dark rooms. The contents of the screen must still be clearly visible
+         in darkness (although they may not be visible in a bright room). -->
+    <integer name="config_screenBrightnessDark">10</integer>
 
 </resources>
