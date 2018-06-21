@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da76f938_aaffd765",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 18789
+      },
+      "writtenOn": "2018-06-21T03:30:03Z",
+      "side": 1,
+      "message": "LTPS IPS LCD (~515 ppi)",
+      "range": {
+        "startLine": 17,
+        "startChar": 35,
+        "endLine": 17,
+        "endChar": 38
+      },
+      "revId": "4395c5c81b4b3f7e4799fcb0bbb9e5ce3fa271e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
