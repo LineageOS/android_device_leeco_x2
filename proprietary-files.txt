@@ -1,7 +1,3 @@
-# Qualcomm Assertive Display
-etc/ad_calib.cfg
-etc/ad_calib_x2.cfg
-
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -15,7 +11,7 @@ etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key
 vendor/firmware/tfa98xx.cnt
 
-# Bluetooth Firmware
+# Bluetooth firmware
 vendor/firmware/nvm_tlv.bin
 vendor/firmware/nvm_tlv_1.3.bin
 vendor/firmware/nvm_tlv_2.1.bin
@@ -284,7 +280,7 @@ vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml
 vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/lib64/libmm-qdcm-diag.so
 
-#DRM
+# DRM
 vendor/firmware/cppf.b00
 vendor/firmware/cppf.b01
 vendor/firmware/cppf.b02
@@ -301,20 +297,27 @@ vendor/lib64/libmdtp_crypto.so
 
 # Fingerprint sensor
 -app/QFingerprintService/QFingerprintService.apk
-bin/qfp-daemon:vendor/bin/qfp-daemon
+vendor/bin/qfp-daemon
 etc/stargate/qfp_config.txt
+etc/stargate/image_quality/templates/template1.pgm
+etc/stargate/wakeup/templates/template_imaginary.bin
+etc/stargate/wakeup/templates/template_real.bin
 lib64/hw/fingerprint.msm8996.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/hw/fingerprint.qcom.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
 
-# NFC Firmware
+# NFC firmware
 vendor/firmware/nfc_test.bin
 vendor/firmware/Signedrompatch_v20.bin
 vendor/firmware/Signedrompatch_v21.bin
 vendor/firmware/Signedrompatch_v24.bin
 vendor/firmware/Signedrompatch_v30.bin
+
+# Qualcomm Assertive Display
+etc/ad_calib.cfg
+etc/ad_calib_x2.cfg
 
 # Radio - MBN
 vendor/firmware/modem_pr/mbn_upgrade_info
@@ -342,14 +345,15 @@ vendor/firmware/a530v1_pm4.fw
 vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
 
-# USB
+# USB firmware
 vendor/firmware/cyccg.cybin
 vendor/firmware/cyccg_table.cybin
 vendor/firmware/sii6400_wihd_mhl.fw
 
 # Unsorted
-bin/ATFWD-daemon
 bin/ftmdaemon
 bin/ks
 bin/ppd
@@ -361,8 +365,6 @@ etc/battd_psy.conf
 etc/capability.xml
 etc/cdma_call_conf.xml
 etc/ecc_conf.xml
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
 etc/qvop/antispoofing.bin
 etc/qvop/cmudict.bin
 etc/qvop/noisesample.bin
@@ -374,9 +376,6 @@ etc/qxdm/gps_log.cfg
 etc/qxdm/modem.cfg
 etc/qxdm/modem+gps.cfg
 etc/qxdm/sensor.cfg
-etc/stargate/image_quality/templates/template1.pgm
-etc/stargate/wakeup/templates/template_imaginary.bin
-etc/stargate/wakeup/templates/template_real.bin
 etc/wifi/fstman.ini
 etc/usf/form_factor_mtp.cfg
 etc/usf/mixer/mixer_paths_mtp.xml
