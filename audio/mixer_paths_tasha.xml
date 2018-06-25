@@ -2136,16 +2136,21 @@
 
     <path name="speaker-mic">
         <path name="adc4" />
-        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="speaker-stereo-mic">
         <ctl name="AIF1_CAP Mixer SLIM TX6" value="1"/>
-        <ctl name="SLIM_0_TX Channels" value="One" />
         <ctl name="SLIM TX6 MUX" value="DEC6" />
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC1" />
-        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC1 Volume" value="22" />
+        <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
+        <ctl name="SLIM TX8 MUX" value="DEC8" />
+        <ctl name="ADC MUX8" value="AMIC" />
+        <ctl name="AMIC MUX8" value="ADC4" />
+        <ctl name="ADC4 Volume" value="22" />
+        <ctl name="SLIM_0_TX Channels" value="Two" />
     </path>
 
     <path name="echo-reference-audio-ec-speaker">
@@ -2165,7 +2170,7 @@
     <path name="speaker-protected">
         <ctl name="AIF4_VI Mixer SPKR_VI_1" value="1" />
         <ctl name="AIF4_VI Mixer SPKR_VI_2" value="1" />
-	<ctl name="SLIM_4_TX Format" value="PACKED_16B" />
+        <ctl name="SLIM_4_TX Format" value="PACKED_16B" />
         <path name="speaker" />
         <ctl name="VI_FEED_TX Channels" value="Two" />
         <ctl name="SLIM0_RX_VI_FB_LCH_MUX"  value="SLIM4_TX" />
@@ -2174,7 +2179,7 @@
 
     <path name="voice-speaker-protected">
         <ctl name="AIF4_VI Mixer SPKR_VI_1" value="1" />
-	<ctl name="SLIM_4_TX Format" value="PACKED_16B" />
+        <ctl name="SLIM_4_TX Format" value="PACKED_16B" />
         <path name="speaker-mono-nb" />
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="SLIM0_RX_VI_FB_LCH_MUX"  value="SLIM4_TX" />
@@ -2213,12 +2218,12 @@
 
     <path name="handset-mic-cdp">
         <path name="adc1" />
-        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="16" />
     </path>
 
     <path name="handset-mic-sbc">
         <path name="adc5" />
-        <ctl name="ADC5 Volume" value="12" />
+        <ctl name="ADC5 Volume" value="16" />
     </path>
 
     <path name="three-mic">
@@ -2347,7 +2352,7 @@
 
     <path name="voice-speaker-mic">
         <path name="speaker-mic" />
-        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="voice-speaker-stereo-mic">
@@ -2541,7 +2546,7 @@
 
     <path name="voice-rec-mic">
         <path name="adc4" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="10" />
     </path>
 
     <path name="audio-rec-mic">
@@ -2601,9 +2606,9 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC4" />
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC5 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC5 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <!-- Dual MIC devices -->
@@ -2634,8 +2639,8 @@
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="dmic-endfire-liquid">
@@ -2645,14 +2650,14 @@
 
     <path name="handset-stereo-dmic-ef">
         <path name="handset-dmic-endfire" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
         <path name="speaker-dmic-endfire" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="voice-dmic-ef-tmus">
@@ -2669,14 +2674,14 @@
 
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire" />
-        <ctl name="ADC1 Volume" value="18" />
-        <ctl name="ADC4 Volume" value="18" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="voice-rec-dmic-ef-fluence">
         <path name="dmic-endfire" />
-        <ctl name="ADC1 Volume" value="18" />
-        <ctl name="ADC5 Volume" value="18" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC5 Volume" value="16" />
     </path>
 
     <path name="handset-stereo-dmic-ef-liquid">
