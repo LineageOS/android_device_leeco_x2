@@ -59,6 +59,7 @@
         <!-- <device name="SND_DEVICE_OUT_VOICE_SPEAKER_BRIGHTNESS" acdb_id="140"/> -->
         <!-- <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_BRIGHTNESS" acdb_id="141"/> -->
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_VBAT" acdb_id="14"/>
+        <device name="SND_DEVICE_OUT_VOLTE_NB_SPEAKER" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_VOICE_LINE" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_HDMI" acdb_id="18"/>
@@ -167,8 +168,10 @@
         <!-- Output devices -->
         <device name="SND_DEVICE_OUT_SPEAKER" alias="speaker" />
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker" />
+        <device name="SND_DEVICE_OUT_VOLTE_NB_SPEAKER" alias="voice-speaker" />
 
         <!-- Input devices -->
+        <device name="SND_DEVICE_IN_HEADSET_BACKMIC_FLUENCE" alias="headset-backmic" />
 
         <device name="SND_DEVICE_IN_SPEAKER_MIC" alias="voice-speaker-stereo-mic" />
         <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" alias="voice-speaker-stereo-mic" />
@@ -179,7 +182,6 @@
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" alias="speaker-stereo-dmic-ef" />
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS" alias="speaker-stereo-dmic-ef" />
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" alias="speaker-stereo-dmic-ef" />
-
 
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-stereo-mic"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" alias="voice-speaker-stereo-mic"/>
