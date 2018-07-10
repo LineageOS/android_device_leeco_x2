@@ -98,15 +98,9 @@ on boot
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 664 /sys/devices/virtual/graphics/fb0/rgb
 
-    # load ufsd modules
-    insmod /system/lib/modules/jnl.ko
-    insmod /system/lib/modules/ufsd.ko
-
     # sleep_sign used by DebugUtils APP
     chown system system /sys/class/leds/blue/sleep_sign
     chmod 0666 /sys/class/leds/blue/sleep_sign
-
-    setprop config.disable_vr false
 
      # wake_gesture
     chown system system /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input3/wake_gesture
@@ -118,6 +112,7 @@ on post-fs
 
     # Create a directory for Battery Daemon logs
     mkdir /data/battd 0755 log log
+
     # to mkdir for letv bootvideo feature
     mkdir /data/fastplay 0777 system system
 
@@ -133,25 +128,6 @@ on post-fs-data
     mkdir /data/misc/stargate/calib_test 0770 system system
     mkdir /data/misc/stargate/database 0770 system system
 
-service ptt_socket_app /system/bin/ptt_socket_app -d
-    class main
-    user root
-    group root
-    oneshot
-
-service ptt_ffbm /system/bin/ptt_socket_app -f -d
-    user root
-    group root
-    disabled
-    oneshot
-
-service wifi_fccutild /system/bin/wifi_fccutild
-    user system
-    group system inet net_admin
-    socket wififccutild_server dgram 0660 system system
-    disabled
-    oneshot
-
 service qfp-boot /system/bin/sh /system/etc/qfp_boot.sh
     class late_start
     user root
@@ -163,40 +139,5 @@ service qfp-daemon /vendor/bin/qfp-daemon
     user system
     group system drmrpc diag input sdcard_rw
 
-service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
-    class late_start
-    group radio wifi inet
-    disabled
-    seclabel u:r:bluetooth_loader:s0
-    oneshot
-
-on property:persist.data.ds_fmc_app.mode=1
-    start ds_fmc_appd
-
-service vm_bms /system/bin/vm_bms
-    user root
-    group root
-    disabled
-
-# letv
-on property:init.svc.qmuxd=running
-    start wifi_mac
-
-service wifi_mac /system/bin/logwrapper /system/bin/set_wifi_mac
-    class core
-    user root
-    oneshot
-
 on property:init.svc.bootanim=running
-    write /sys/class/leds/wled/brightness 4095
-
-#set nvm_service
-service nvm_service /system/bin/nvm_service
-    class core
-    disabled
-    oneshot
-    user root
-    group root
-
-on property:sys.boot_completed=1
-    start nvm_service
+    write /sys/class/leds/wled/brightness 122
