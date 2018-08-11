@@ -54,8 +54,5 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
-# Treble
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # inherit from the proprietary version
 -include vendor/leeco/x2/BoardConfigVendor.mk
