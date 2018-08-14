@@ -113,7 +113,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libSonyIMX230_lg_PdafLibrary.so
 vendor/lib/libSonyIMX230PdafLibrary.so
 vendor/lib/libSonyIMX230_sunny_PdafLibrary.so
-vendor/lib/libStDrvInt.so
 
 # Camera actuators
 vendor/lib/libactuator_bu63165.so
