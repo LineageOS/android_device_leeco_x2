@@ -280,17 +280,28 @@ vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/lib64/libmm-qdcm-diag.so
 
 # DRM
-vendor/firmware/cppf.b00
-vendor/firmware/cppf.b01
-vendor/firmware/cppf.b02
-vendor/firmware/cppf.b03
-vendor/firmware/cppf.b04
-vendor/firmware/cppf.b05
-vendor/firmware/cppf.b06
-vendor/firmware/cppf.mbn
-vendor/firmware/cppf.mdt
+etc/firmware/cppf.b00
+etc/firmware/cppf.b01
+etc/firmware/cppf.b02
+etc/firmware/cppf.b03
+etc/firmware/cppf.b04
+etc/firmware/cppf.b05
+etc/firmware/cppf.b06
+etc/firmware/cppf.mbn
+etc/firmware/cppf.mdt
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.b04
+etc/firmware/widevine.b05
+etc/firmware/widevine.b06
+etc/firmware/widevine.mbn
+etc/firmware/widevine.mdt
+vendor/lib/libcppf.so
 vendor/lib/libmdtp.so
 vendor/lib/libmdtp_crypto.so
+vendor/lib/liboemcrypto.so
 vendor/lib64/libmdtp.so
 vendor/lib64/libmdtp_crypto.so
 
