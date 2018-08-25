@@ -1,0 +1,6 @@
+type qfp_boot_shell, domain;
+
+init_daemon_domain(qfp_boot_shell)
+
+allow qfp_boot_shell vendor_shell_exec:file { rx_file_perms };
+allow qfp_boot_shell vendor_toolbox_exec:file { rx_file_perms };

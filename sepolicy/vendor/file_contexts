@@ -2,5 +2,11 @@
 /data/fpc(/.*)?                       u:object_r:fpc_data_file:s0
 /data/misc/stargate(/.*)?             u:object_r:qfp-daemon_data_file:s0
 
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.leeco_x2    u:object_r:hal_light_default_exec:s0
+
 # Persist files
 /persist/qc_senseid(/.*)?             u:object_r:persist_qc_senseid_file:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/qfp_boot\.sh    u:object_r:qfp_boot_shell_exec:s0
