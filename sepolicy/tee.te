@@ -1,5 +1,0 @@
-allow tee fpc_data_file:dir { r_dir_perms };
-allow tee fpc_data_file:file { r_file_perms };
-
-allow tee persist_qc_senseid_file:dir create_dir_perms;
-allow tee persist_qc_senseid_file:file create_file_perms;

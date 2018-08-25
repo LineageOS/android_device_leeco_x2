@@ -1,4 +1,5 @@
-# Copyright (c) 2015, The Linux Foundation. All rights reserved.
+#!/vendor/bin/sh
+# Copyright (c) 2016, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -24,6 +25,15 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#
 
-key 114   VOLUME_DOWN
-key 116   POWER
+if [ ! -f /persist/qc_senseid/bge_upgrade_flag2 ]; then
+    rm -fR /persist/qc_senseid/bg_estimation
+    rm -fR /persist/qc_senseid/bg_estimation0
+    rm -fR /persist/qc_senseid/bg_estimation1
+    rm -fR /persist/qc_senseid/bg_estimation2
+	rm -fR /persist/qc_senseid/psf
+    touch /persist/qc_senseid/bge_upgrade_flag2
+fi
+
