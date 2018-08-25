@@ -1,4 +1,5 @@
 Copyright (C) 2016 The CyanogenMod Project
+
 Copyright (C) 2017-2018 The LineageOS Project
 
 Device configuration for Letv Max2 (x820 x821 x822 x829)

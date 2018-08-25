@@ -1,0 +1,10 @@
+# Data files
+/data/fpc(/.*)?                                    u:object_r:fpc_data_file:s0
+/data/misc/stargate(/.*)?                          u:object_r:qfp-daemon_data_file:s0
+/sys/devices/soc/qpnp-wled-(.*)?/leds/wled(/.*)?   u:object_r:sysfs_leds:s0
+
+# Persist files
+/persist/qc_senseid(/.*)?                          u:object_r:persist_qc_senseid_file:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/qfp_boot\.sh           u:object_r:qfp_boot_shell_exec:s0
