@@ -1,3 +1,5 @@
+typeattribute qfp-daemon binder_in_vendor_violators;
+
 allow qfp-daemon hal_fingerprint_default:binder call;
 allow qfp-daemon iqfp_service:service_manager add;
 
@@ -6,6 +8,11 @@ allowxperm qfp-daemon self:socket ioctl msm_sock_ipc_ioctls;
 
 allow qfp-daemon servicemanager:binder { call transfer };
 
+# R dir perms for persist qfp-daemon_data_file dir
+r_dir_file(qfp-daemon, qfp-daemon_data_file)
+
 # R dir perms for persist qc_senseid dir
 r_dir_file(qfp-daemon, persist_file)
 r_dir_file(qfp-daemon, persist_qc_senseid_file)
+
+binder_use(qfp-daemon);

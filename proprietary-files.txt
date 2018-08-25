@@ -7,8 +7,8 @@ vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/workspaceFile.qwsp
-etc/drc/drc_cfg_AZ.txt
-etc/dts/dts-m6m8-lic.key
+etc/drc/drc_cfg_AZ.txt:vendor/etc/drc/drc_cfg_AZ.txt
+etc/dts/dts-m6m8-lic.key:vendor/etc/dts/dts-m6m8-lic.key
 vendor/firmware/tfa98xx.cnt
 
 # Bluetooth firmware
@@ -24,36 +24,34 @@ vendor/firmware/rampatch_tlv_3.0.tlv
 vendor/firmware/rampatch_tlv_3.2.tlv
 
 # Camera
-bin/mm-qcamera-daemon
-etc/camera/imx230_chromatix.xml
-etc/camera/imx230_lg_chromatix.xml
-etc/camera/imx230_sunny_chromatix.xml
-etc/camera/LeMax2Large.png
-etc/camera/LeMax2Small.png
-etc/camera/msm8996_camera.xml
-etc/camera/ov8865_chromatix.xml
-etc/camera/ov8865_ofilm_chromatix.xml
-lib/libLetvCameraImageSDK.so
-lib/libamipengine.so
-lib/libarcsoft_antishaking.so
-lib/libarcsoft_beautyshot.so
-lib/libarcsoft_beautyshot_image_algorithm.so
-lib/libarcsoft_beautyshot_video_algorithm.so
-lib/libarcsoft_hdr.so
-lib/libarcsoft_hdr_detection.so
-lib/libarcsoft_night_shot.so
-lib/libarcsoft_nighthawk.so
-lib/libarcsoft_panorama_burstcapture.so
-lib/libarcsoft_smart_denoise.so
-lib/libcamera_letv_algo.so
-lib/libletv_algo_jni.so
-lib/libmm-qcamera.so
-lib/libmpbase.so
-lib/libmpkernel.so
-lib/libmpstream.so
-lib/libmputility.so
-lib/libqrDec.so
-lib/libzeusisCameraAlgoSceneDetection.so
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+etc/camera/imx230_chromatix.xml:vendor/etc/camera/imx230_chromatix.xml
+etc/camera/imx230_lg_chromatix.xml:vendor/etc/camera/imx230_lg_chromatix.xml
+etc/camera/imx230_sunny_chromatix.xml:vendor/etc/camera/imx230_sunny_chromatix.xml
+etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml
+etc/camera/ov8865_chromatix.xml:vendor/etc/camera/ov8865_chromatix.xml
+etc/camera/ov8865_ofilm_chromatix.xml:vendor/etc/camera/ov8865_ofilm_chromatix.xml
+lib/libLetvCameraImageSDK.so:vendor/lib/libLetvCameraImageSDK.so
+lib/libamipengine.so:vendor/lib/libamipengine.so
+lib/libarcsoft_antishaking.so:vendor/lib/libarcsoft_antishaking.so
+lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
+lib/libarcsoft_beautyshot_image_algorithm.so:vendor/lib/libarcsoft_beautyshot_image_algorithm.so
+lib/libarcsoft_beautyshot_video_algorithm.so:vendor/lib/libarcsoft_beautyshot_video_algorithm.so
+lib/libarcsoft_hdr.so:vendor/lib/libarcsoft_hdr.so
+lib/libarcsoft_hdr_detection.so:vendor/lib/libarcsoft_hdr_detection.so
+lib/libarcsoft_night_shot.so:vendor/lib/libarcsoft_night_shot.so
+lib/libarcsoft_nighthawk.so:vendor/lib/libarcsoft_nighthawk.so
+lib/libarcsoft_panorama_burstcapture.so:vendor/lib/libarcsoft_panorama_burstcapture.so
+lib/libarcsoft_smart_denoise.so:vendor/lib/libarcsoft_smart_denoise.so
+lib/libcamera_letv_algo.so:vendor/lib/libcamera_letv_algo.so
+lib/libletv_algo_jni.so:vendor/lib/libletv_algo_jni.so
+lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
+lib/libmpbase.so:vendor/lib/libmpbase.so
+lib/libmpkernel.so:vendor/lib/libmpkernel.so
+lib/libmpstream.so:vendor/lib/libmpstream.so
+lib/libmputility.so:vendor/lib/libmputility.so
+lib/libqrDec.so:vendor/lib/libqrDec.so
+lib/libzeusisCameraAlgoSceneDetection.so:vendor/lib/libzeusisCameraAlgoSceneDetection.so
 vendor/lib/libflash_i2c.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -72,7 +70,7 @@ vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_modules.so|bbb27781a39ec60c991ccf027d23eab3a9721bf2
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
@@ -113,7 +111,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libSonyIMX230_lg_PdafLibrary.so
 vendor/lib/libSonyIMX230PdafLibrary.so
 vendor/lib/libSonyIMX230_sunny_PdafLibrary.so
-vendor/lib/libStDrvInt.so
 
 # Camera actuators
 vendor/lib/libactuator_bu63165.so
@@ -295,29 +292,15 @@ vendor/lib/libmdtp_crypto.so
 vendor/lib64/libmdtp.so
 vendor/lib64/libmdtp_crypto.so
 
-# Fingerprint sensor
--app/QFingerprintService/QFingerprintService.apk
-vendor/bin/qfp-daemon
-etc/stargate/qfp_config.txt
-etc/stargate/image_quality/templates/template1.pgm
-etc/stargate/wakeup/templates/template_imaginary.bin
-etc/stargate/wakeup/templates/template_real.bin
-lib64/hw/fingerprint.msm8996.so
-vendor/lib64/libqfp-service.so
+# Fingerprint
+-app/QFingerprintService/QFingerprintService.apk:vendor/app/QFingerprintService/QFingerprintService.apk
+bin/qfp-daemon:vendor/bin/qfp-daemon
 vendor/lib64/hw/fingerprint.qcom.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
 
-# NFC firmware
-vendor/firmware/nfc_test.bin
-vendor/firmware/Signedrompatch_v20.bin
-vendor/firmware/Signedrompatch_v21.bin
-vendor/firmware/Signedrompatch_v24.bin
-vendor/firmware/Signedrompatch_v30.bin
-
 # Qualcomm Assertive Display
-etc/ad_calib.cfg
-etc/ad_calib_x2.cfg
+etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
 
 # Radio - MBN
 vendor/firmware/modem_pr/mbn_upgrade_info
@@ -345,8 +328,6 @@ vendor/firmware/a530v1_pm4.fw
 vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
 
 # USB firmware
 vendor/firmware/cyccg.cybin
@@ -354,48 +335,30 @@ vendor/firmware/cyccg_table.cybin
 vendor/firmware/sii6400_wihd_mhl.fw
 
 # Unsorted
-bin/ftmdaemon
-bin/ks
-bin/ppd
-bin/ssr_diag
-bin/ssr_setup
-bin/tloc_daemon
-etc/batt_info_show_conf.xml
-etc/battd_psy.conf
-etc/capability.xml
-etc/cdma_call_conf.xml
-etc/ecc_conf.xml
-etc/qvop/antispoofing.bin
-etc/qvop/cmudict.bin
-etc/qvop/noisesample.bin
-etc/qvop/poc_64_hmm.gmm
-etc/qxdm/1.cfg
-etc/qxdm/2.cfg
-etc/qxdm/gps.cfg
-etc/qxdm/gps_log.cfg
-etc/qxdm/modem.cfg
-etc/qxdm/modem+gps.cfg
-etc/qxdm/sensor.cfg
-etc/wifi/fstman.ini
-etc/usf/form_factor_mtp.cfg
-etc/usf/mixer/mixer_paths_mtp.xml
-etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
-etc/usf/readme.txt
-etc/usf/version.txt
-etc/UEISettings
-etc/init.uei.sh
-vendor/bin/mdtpd
-vendor/bin/mm-pp-daemon
+bin/ftmdaemon:vendor/bin/ftmdaemon
+bin/ppd:vendor/bin/ppd
+bin/ssr_diag:vendor/bin/ssr_diag
+bin/ssr_setup:vendor/bin/ssr_setup
+bin/tloc_daemon:vendor/bin/tloc_daemon
+bin/mdtpd:vendor/bin/mdtpd
+bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
+etc/qxdm/1.cfg:vendor/etc/qxdm/1.cfg
+etc/qxdm/gps_log.cfg:vendor/etc/qxdm/gps_log.cfg
+etc/usf/form_factor_mtp.cfg:vendor/etc/usf/form_factor_mtp.cfg
+etc/usf/mixer/mixer_paths_mtp.xml:vendor/etc/usf/mixer/mixer_paths_mtp.xml
+etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg
+etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg
+etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin
+etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg
+etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg
+etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin
+etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg
+etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin
+etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin
+etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
+etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
+etc/usf/readme.txt:vendor/etc/usf/readme.txt
+etc/usf/version.txt:vendor/etc/usf/version.txt
 vendor/lib/libqcproximity.so
 vendor/lib/libual.so
 vendor/lib/libualutil.so
