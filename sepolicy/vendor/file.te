@@ -1,0 +1,3 @@
+type fpc_data_file, file_type, data_file_type;
+type persist_qc_senseid_file, file_type;
+type qfp_boot_shell_exec, file_type, exec_type, vendor_file_type;
