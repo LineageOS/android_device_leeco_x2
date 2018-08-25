@@ -5,7 +5,7 @@ ro.config.le_hardware_version=HW_1.0.0
 ro.display.series=Le Max2
 
 # Apical AD
-ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
+ro.qcom.ad.calib.data=/vendor/etc/ad_calib_x2.cfg
 
 # Display
 ro.sf.lcd_density=560
@@ -13,29 +13,26 @@ ro.sf.lcd_density=560
 # Fingerprint
 persist.qfp=true
 persist.qfp.fd_enabled=1
+persist.qfp.home_btn_enabled=1
 persist.qfp.ssc_enable_island=1
 persist.qfp.ssc_fgoff_dil_s1=10
-persist.qfp.ssc_fgoff_dil_home=1
-persist.qfp.finger_evt_enabled=1
-persist.qfp.touch_enabled=1
-
+persist.qfp.ssc_fgoff_dil_home=10
 persist.qfp.ssc_thresh_s1=0.570
 persist.qfp.ssc_thresh_s1_off=0.0
-persist.qfp.ssc_thresh_s1_rub=1500
+persist.qfp.ssc_thresh_s1_rub=0.0
 persist.qfp.ssc_thresh_s2=0.430
-persist.qfp.ssc_thresh_s2_off=4.0
-persist.qfp.ssc_thresh_s2_touch=0.430
-persist.qfp.ssc_thresh_s2_lift=0.410
-
-persist.qfp.filter_movefinger=1000
-persist.qfp.filter_holdfinger=50000
-persist.qfp.filter_insuffcov=6000
-persist.qfp.filter_liftfinger=0
-
+persist.qfp.ssc_thresh_s2_off=0.000
+persist.qfp.ssc_thresh_s2_touch=0.330
+persist.qfp.ssc_thresh_s2_lift=0.310
 persist.qfp.ssc_basis_s1=/persist/qc_senseid/bg_estimation/bg_small1_basis.dat
 persist.qfp.ssc_basis_s1_off=/persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat
 persist.qfp.ssc_basis_s2=/persist/qc_senseid/bg_estimation/bg_small2_basis.dat
 persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
+persist.qfp.cbge_active_enabled=1
+persist.qfp.cbge_sleep_enabled=1
+persist.qfp.filter_liftfinger=0
+persist.qfp.wup_display=0
+persist.qfp.capacitive_enabled=1
 persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
 # Radio
