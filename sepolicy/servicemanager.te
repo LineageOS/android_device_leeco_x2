@@ -1,3 +1,0 @@
-allow servicemanager qfp-daemon:dir search;
-allow servicemanager qfp-daemon:file { open read };
-allow servicemanager qfp-daemon:process getattr;
