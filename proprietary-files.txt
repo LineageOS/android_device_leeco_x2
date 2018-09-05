@@ -24,7 +24,7 @@ vendor/firmware/rampatch_tlv_3.0.tlv
 vendor/firmware/rampatch_tlv_3.2.tlv
 
 # Camera
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|a59f653f44d5049bebd86e9f431070ef356e76f4
 etc/camera/imx230_chromatix.xml:vendor/etc/camera/imx230_chromatix.xml
 etc/camera/imx230_lg_chromatix.xml:vendor/etc/camera/imx230_lg_chromatix.xml
 etc/camera/imx230_sunny_chromatix.xml:vendor/etc/camera/imx230_sunny_chromatix.xml
