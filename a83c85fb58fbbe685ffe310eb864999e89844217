@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f44ef45_e260fc99",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 7
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 17594
+      },
+      "writtenOn": "2018-09-05T08:44:01Z",
+      "side": 1,
+      "message": "to be moved to vendor",
+      "revId": "a83c85fb58fbbe685ffe310eb864999e89844217",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
