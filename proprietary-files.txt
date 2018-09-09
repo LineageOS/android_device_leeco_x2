@@ -292,12 +292,12 @@ vendor/lib/libmdtp_crypto.so
 vendor/lib64/libmdtp.so
 vendor/lib64/libmdtp_crypto.so
 
-# Fingerprint
--app/QFingerprintService/QFingerprintService.apk:vendor/app/QFingerprintService/QFingerprintService.apk
-bin/qfp-daemon:vendor/bin/qfp-daemon
-vendor/lib64/hw/fingerprint.qcom.so
-vendor/lib64/libqfp-service.so
-vendor/lib64/qfp.wakeup.so
+# Fingerprint - from Capricorn
+-app/QFingerprintService/QFingerprintService.apk:vendor/app/QFingerprintService/QFingerprintService.apk|fbb50be6f000822d36e693b9cef4c59635a85903
+bin/qfp-daemon:vendor/bin/qfp-daemon|05447a1ce83dd7377e826bb80497f2d4a9c13ec9
+vendor/lib64/hw/fingerprint.qcom.so|019dfc2f66f3ee9c4d43d0f5e33ff8f6bf62f9b7
+vendor/lib64/libqfp-service.so|16a0c5be068a9133b348aac5e6c00ee91be13ed3
+vendor/lib64/qfp.wakeup.so|0b36ff46ca323885850c4049ddccfb354bb378df
 
 # Qualcomm Assertive Display
 etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
