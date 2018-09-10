@@ -1,12 +1,17 @@
 typeattribute qfp-daemon binder_in_vendor_violators;
 
-allow qfp-daemon hal_fingerprint_default:binder call;
-allow qfp-daemon iqfp_service:service_manager add;
+binder_call(qfp-daemon, hal_fingerprint_default);
 
 allow qfp-daemon self:socket create_socket_perms;
 allowxperm qfp-daemon self:socket ioctl msm_sock_ipc_ioctls;
 
 allow qfp-daemon servicemanager:binder { call transfer };
+
+# Access QFP Android Proxy
+allow qfp-daemon qfp_proxy_service:service_manager { find };
+
+# Add IQfpService service
+allow qfp-daemon iqfp_service:service_manager { add };
 
 # R dir perms for persist qfp-daemon_data_file dir
 r_dir_file(qfp-daemon, qfp-daemon_data_file)
