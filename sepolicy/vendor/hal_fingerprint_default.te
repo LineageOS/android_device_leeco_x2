@@ -1,6 +1,6 @@
 typeattribute hal_fingerprint_default binder_in_vendor_violators;
 
-allow hal_fingerprint_default iqfp_service:service_manager find;
+allow hal_fingerprint_default iqfp_service:service_manager { find };
 allow hal_fingerprint_default qfp-daemon:binder { call transfer };
 
 binder_use(hal_fingerprint_default);
