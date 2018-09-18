@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f78af3c8_70f6e7fb",
+        "filename": "vendor_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2018-09-18T04:04:07Z",
+      "side": 1,
+      "message": "vendor",
+      "range": {
+        "startLine": 10,
+        "startChar": 27,
+        "endLine": 10,
+        "endChar": 37
+      },
+      "revId": "e0231e41270f400aa7bc90f6ca13ca5d3a82ecd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
