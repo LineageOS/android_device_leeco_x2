@@ -95,3 +95,10 @@ service qfp-daemon /vendor/bin/qfp-daemon
     class late_start
     user system
     group system drmrpc diag input sdcard_rw
+
+# autofocus fix
+on property:persist.camera.focus_fix=1
+    write /sys/module/msm_actuator/parameters/use_focus_fix 1
+
+on property:persist.camera.focus_fix=0
+    write /sys/module/msm_actuator/parameters/use_focus_fix 0
