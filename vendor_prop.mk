@@ -42,3 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds
+
+# X2 autofocus fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.focus_fix=0
