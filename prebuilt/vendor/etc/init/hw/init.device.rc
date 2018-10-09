@@ -65,6 +65,9 @@ on boot
     chown root system /sys/devices/virtual/video/sii6400/wihd/self/connect_timeout
     chown root system /sys/devices/virtual/video/sii6400/wihd/cec/out
 
+    # Camera focus fix parameter
+    chown system system /sys/module/msm_actuator/parameters/use_focus_fix
+
    # LiveDisplay
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 664 /sys/devices/virtual/graphics/fb0/rgb
@@ -96,9 +99,3 @@ service qfp-daemon /vendor/bin/qfp-daemon
     user system
     group system drmrpc diag input sdcard_rw
 
-# autofocus fix
-on property:persist.camera.focus_fix=1
-    write /sys/module/msm_actuator/parameters/use_focus_fix 1
-
-on property:persist.camera.focus_fix=0
-    write /sys/module/msm_actuator/parameters/use_focus_fix 0

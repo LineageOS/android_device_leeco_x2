@@ -1,2 +1,4 @@
 type persist_qc_senseid_file, file_type;
 type qfp_boot_shell_exec, file_type, exec_type, vendor_file_type;
+
+type sysfs_focus_param, fs_type, sysfs_type;
