@@ -12,3 +12,6 @@
 
 # Shell scripts
 /(vendor|system/vendor)/bin/qfp_boot\.sh               u:object_r:qfp_boot_shell_exec:s0
+
+# Camera focus fix parameter
+/sys/module/msm_actuator/parameters/use_focus_fix      u:object_r:sysfs_focus_param:s0
