@@ -26,7 +26,7 @@
 #
 
 on init
-    # change for usb typec headset prop
+    # Change for USB Type-C headset prop
     chown media media /sys/module/snd_soc_msm8996/parameters/usb_typec_swap
     chown media media /sys/module/snd_soc_wcd_mbhc/parameters/headset_swap_backmic
     chown media media /sys/devices/virtual/typec/typec_device/supported_dev
@@ -37,7 +37,7 @@ on boot
     chown cameraserver camera /sys/devices/soc/soc:qcom,camera-flash/flashled1
     chown cameraserver camera /sys/devices/soc/soc:qcom,camera-flash/flashled2
 
-#for WiHD
+    # WiHD
     chown root system /sys/devices/virtual/video/sii6400/mode
     chown root system /sys/devices/virtual/video/sii6400/wihd/connect
     chown root system /sys/devices/virtual/video/sii6400/wihd/state
@@ -65,11 +65,14 @@ on boot
     chown root system /sys/devices/virtual/video/sii6400/wihd/self/connect_timeout
     chown root system /sys/devices/virtual/video/sii6400/wihd/cec/out
 
-   # LiveDisplay
+    # Camera focus fix parameter
+    chown system system /sys/module/msm_actuator/parameters/use_focus_fix
+
+    # LiveDisplay
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 664 /sys/devices/virtual/graphics/fb0/rgb
 
-   # wake_gesture
+    # wake_gesture
     chown system system /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input3/wake_gesture
     chmod 0666 /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input2/wake_gesture
 
