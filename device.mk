@@ -50,6 +50,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
 
+# Device settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
