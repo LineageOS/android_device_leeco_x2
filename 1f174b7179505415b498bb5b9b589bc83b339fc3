@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe692978_8579f180",
+        "filename": "devicesettings/res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2018-10-10T00:18:19Z",
+      "side": 1,
+      "message": "Is this a good description? I don\u0027t seem to have focus issues with or without this",
+      "revId": "1f174b7179505415b498bb5b9b589bc83b339fc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
