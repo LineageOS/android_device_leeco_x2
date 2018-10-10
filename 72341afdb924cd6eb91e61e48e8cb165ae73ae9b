@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b93e9e5e_0d8bb948",
+        "filename": "devicesettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2018-10-10T04:50:09Z",
+      "side": 1,
+      "message": "tbh this isn\u0027t proper grammar. It should be \"Enable if your device has focus issues\" or the original summary that Tortel wrote. Either option is fine by me as it conveys the same message",
+      "range": {
+        "startLine": 23,
+        "startChar": 44,
+        "endLine": 23,
+        "endChar": 82
+      },
+      "revId": "72341afdb924cd6eb91e61e48e8cb165ae73ae9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
