@@ -32,9 +32,10 @@
     </array>
 
     <!-- Power consumption when CPU is suspended -->
-    <item name="cpu.idle">5.734</item>
+    <item name="cpu.idle">5</item>
+
     <!-- Additional power consumption when CPU is in a kernel idle loop -->
-    <item name="cpu.awake">1.389</item>
+    <item name="cpu.awake">20</item>
 
     <!-- Different CPU speeds as reported in
          /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies -->
@@ -88,79 +89,82 @@
     <!-- Additional power used by a CPU from cluster 0 when running at different
          speeds. Currently this measurement also includes cluster cost. -->
     <array name="cpu.active.cluster0">
-        <value>84.302</value> <!-- 307 MHz CPU speed -->
-        <value>90.947</value> <!-- 422 MHz CPU speed -->
-        <value>95.165</value> <!-- 480 MHz CPU speed -->
-        <value>97.653</value> <!-- 556 MHz CPU speed -->
-		<value>104.568</value> <!-- 652 MHz CPU speed -->
-        <value>107.659</value> <!-- 729 MHz CPU speed -->
-        <value>115.662</value> <!-- 844 MHz CPU speed -->
-        <value>132.040</value> <!-- 960 MHz CPU speed -->
-        <value>140.037</value> <!-- 1036 MHz CPU speed -->
-        <value>152.87</value> <!-- 1113 MHz CPU speed -->
-        <value>153.94</value> <!-- 1190 MHz CPU speed -->
-        <value>163.41</value> <!-- 1228 MHz CPU speed -->
-        <value>179.151</value> <!-- 1324 MHz CPU speed -->
-        <value>196.216</value> <!-- 1401 MHz CPU speed -->
-        <value>201.216</value> <!-- 1478 MHz CPU speed -->
-        <value>238.418</value> <!-- 1593 MHz CPU speed -->
+        <value>50</value> <!-- 307 MHz CPU speed -->
+        <value>75</value> <!-- 422 MHz CPU speed -->
+        <value>56</value> <!-- 480 MHz CPU speed -->
+        <value>61</value> <!-- 556 MHz CPU speed -->
+        <value>67</value> <!-- 652 MHz CPU speed -->
+        <value>71</value> <!-- 729 MHz CPU speed -->
+        <value>78</value> <!-- 844 MHz CPU speed -->
+        <value>87</value> <!-- 960 MHz CPU speed -->
+        <value>97</value> <!-- 1036 MHz CPU speed -->
+        <value>108</value> <!-- 1113 MHz CPU speed -->
+        <value>110</value> <!-- 1190 MHz CPU speed -->
+        <value>121</value> <!-- 1228 MHz CPU speed -->
+        <value>135</value> <!-- 1324 MHz CPU speed -->
+        <value>165</value> <!-- 1401 MHz CPU speed -->
+        <value>170</value> <!-- 1478 MHz CPU speed -->
+        <value>185</value> <!-- 1593 MHz CPU speed -->
     </array>
     <!-- Additional power used by a CPU from cluster 1 when running at different
          speeds. Currently this measurement also includes cluster cost. -->
     <array name="cpu.active.cluster1">
-	    <value>86.913</value> <!-- 307 MHz CPU speed -->
-        <value>92.690</value> <!-- 403 MHz CPU speed -->
-        <value>95.205</value> <!-- 480 MHz CPU speed -->
-        <value>99.819</value> <!-- 556 MHz CPU speed -->
-        <value>105.335</value> <!-- 652 MHz CPU speed -->
-        <value>111.080</value> <!-- 729 MHz CPU speed -->
-        <value>118.945</value> <!-- 806 MHz CPU speed -->
-        <value>121.945</value> <!-- 883 MHz CPU speed -->
-        <value>132.773</value> <!-- 940 MHz CPU speed -->
-        <value>145.447</value> <!-- 1036 MHz CPU speed -->
-        <value>158.779</value> <!-- 1113 MHz CPU speed -->
-        <value>164.459</value> <!-- 1190 MHz CPU speed -->
-        <value>184.637</value> <!-- 1248 MHz CPU speed -->
-        <value>201.735</value> <!-- 1324 MHz CPU speed -->
-        <value>211.735</value> <!-- 1401 MHz CPU speed -->
-        <value>217.735</value> <!-- 1478 MHz CPU speed -->
-        <value>227.029</value> <!-- 1555 MHz CPU speed -->
-        <value>247.472</value> <!-- 1632 MHz CPU speed -->
-        <value>256.472</value> <!-- 1708 MHz CPU speed -->
-        <value>269.039</value> <!-- 1785 MHz CPU speed -->
-        <value>291.519</value> <!-- 1824 MHz CPU speed -->
-        <value>304.670</value> <!-- 1902 MHz CPU speed -->
-        <value>331.694</value> <!-- 1996 MHz CPU speed -->
-        <value>365.964</value> <!-- 2073 MHz CPU speed -->
-        <value>381.248</value> <!-- 2150 MHz CPU speed -->
+        <value>55</value> <!-- 307 MHz CPU speed -->
+        <value>60</value> <!-- 403 MHz CPU speed -->
+        <value>65</value> <!-- 480 MHz CPU speed -->
+        <value>69</value> <!-- 556 MHz CPU speed -->
+        <value>72</value> <!-- 652 MHz CPU speed -->
+        <value>76</value> <!-- 729 MHz CPU speed -->
+        <value>81</value> <!-- 806 MHz CPU speed -->
+        <value>87</value> <!-- 883 MHz CPU speed -->
+        <value>92</value> <!-- 940 MHz CPU speed -->
+        <value>100</value> <!-- 1036 MHz CPU speed -->
+        <value>108</value> <!-- 1113 MHz CPU speed -->
+        <value>112</value> <!-- 1190 MHz CPU speed -->
+        <value>102</value> <!-- 1248 MHz CPU speed -->
+        <value>109</value> <!-- 1324 MHz CPU speed -->
+        <value>142</value> <!-- 1401 MHz CPU speed -->
+        <value>154</value> <!-- 1478 MHz CPU speed -->
+        <value>164</value> <!-- 1555 MHz CPU speed -->
+        <value>182</value> <!-- 1632 MHz CPU speed -->
+        <value>220</value> <!-- 1708 MHz CPU speed -->
+        <value>231</value> <!-- 1785 MHz CPU speed -->
+        <value>236</value> <!-- 1824 MHz CPU speed -->
+        <value>249</value> <!-- 1902 MHz CPU speed -->
+        <value>261</value> <!-- 1996 MHz CPU speed -->
+        <value>277</value> <!-- 2073 MHz CPU speed -->
+        <value>325</value> <!-- 2150 MHz CPU speed -->
     </array>
 
     <!-- Additional power used when screen is turned on at minimum brightness -->
-    <item name="screen.on">178.708</item>
+    <item name="screen.on">45</item>
     <!-- Additional power used when screen is at maximum brightness, compared to
          screen at minimum brightness -->
-    <item name="screen.full">240.790</item>
+    <item name="screen.full">310</item>
+
     <!-- Average power used by the camera flash module when on -->
-    <item name="camera.flashlight">298.498</item>
+    <item name="camera.flashlight">500</item>
     <!-- Average power use by the camera subsystem for a typical camera
          application. Intended as a rough estimate for an application running a
          preview and capturing approximately 10 full-resolution pictures per
          minute. -->
-    <item name="camera.avg">1152.292</item>
+    <item name="camera.avg">595</item>
 
     <!-- Additional power used when audio decoding/encoding via DSP -->
-    <item name="dsp.audio">25.00</item>
+    <item name="dsp.audio">18</item>
+
+    <!-- Additional power used when video decoding/encoding via DSP -->
+    <item name="dsp.video">110</item>
 
     <!-- Additional power used when GPS is acquiring a signal -->
-    <item name="gps.on">10.23</item>
-
+    <item name="gps.on">57</item>
     <!-- Additional power used when Wi-Fi is turned on but not receiving,
          transmitting, or scanning -->
-    <item name="wifi.on">2</item>
+    <item name="wifi.on">3.5</item>
     <!-- Additional power used when transmitting or receiving over Wi-Fi -->
-    <item name="wifi.active">160</item>
+    <item name="wifi.active">190</item>
     <!-- Additional power used when Wi-Fi is scanning for access points -->
-    <item name="wifi.scan">25</item>
+    <item name="wifi.scan">88</item>
 
     <!-- mA. Current figures based on .0801 s/c and 75.48mA while scanning -->
     <array name="wifi.batchedscan">
@@ -171,14 +175,19 @@
         <value>2</value>    <!-- 4097-/hr -->
     </array>
 
+    <!-- Additional power used when bluetooth radio is transmitting/receiving -->
+    <item name="bluetooth.active">20</item>
+    <!-- Current consumed by the bluetooth at different signal strengths, when paging -->
+    <item name="bluetooth.on">0.5</item>
+
     <!-- Additional power used when cellular radio is transmitting/receiving -->
-    <item name="radio.active">300</item>
+    <item name="radio.active">100</item>
     <!-- The current consumed by the radio when it is scanning for a signal -->
-    <item name="radio.scanning">82.2</item>
+    <item name="radio.scanning">10</item>
     <!-- Current consumed by the radio at different signal strengths, when paging -->
     <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
-        <value>2.2</value>
-        <value>1.6</value>
+        <value>3.5</value>
+        <value>3.5</value>
     </array>
 
 </device>
