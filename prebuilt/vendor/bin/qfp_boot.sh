@@ -27,11 +27,11 @@
 #
 #
 
-if [ ! -f /persist/qc_senseid/bge_upgrade_flag2 ]; then
-    rm -fR /persist/qc_senseid/bg_estimation
-    rm -fR /persist/qc_senseid/bg_estimation0
-    rm -fR /persist/qc_senseid/bg_estimation1
-    rm -fR /persist/qc_senseid/bg_estimation2
-	rm -fR /persist/qc_senseid/psf
-    touch /persist/qc_senseid/bge_upgrade_flag2
+if [ ! -f /mnt/vendor/persist/qc_senseid/bge_upgrade_flag2 ]; then
+    rm -fR /mnt/vendor/persist/qc_senseid/bg_estimation
+    rm -fR /mnt/vendor/persist/qc_senseid/bg_estimation0
+    rm -fR /mnt/vendor/persist/qc_senseid/bg_estimation1
+    rm -fR /mnt/vendor/persist/qc_senseid/bg_estimation2
+	rm -fR /mnt/vendor/persist/qc_senseid/psf
+    touch /mnt/vendor/persist/qc_senseid/bge_upgrade_flag2
 fi
