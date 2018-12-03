@@ -17,7 +17,7 @@ allow qfp-daemon iqfp_service:service_manager { add };
 r_dir_file(qfp-daemon, qfp-daemon_data_file)
 
 # R dir perms for persist qc_senseid dir
-r_dir_file(qfp-daemon, persist_file)
+r_dir_file(qfp-daemon, sensors_persist_file)
 r_dir_file(qfp-daemon, persist_qc_senseid_file)
 
 binder_use(qfp-daemon);
