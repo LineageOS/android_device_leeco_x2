@@ -8,7 +8,7 @@
 /(vendor|system/vendor)/lib(64)?/libsensor1\.so        u:object_r:same_process_hal_file:s0
 
 # Persist files
-/persist/qc_senseid(/.*)?                              u:object_r:persist_qc_senseid_file:s0
+/mnt/vendor/persist/qc_senseid(/.*)?                   u:object_r:persist_qc_senseid_file:s0
 
 # Shell scripts
 /(vendor|system/vendor)/bin/qfp_boot\.sh               u:object_r:qfp_boot_shell_exec:s0
