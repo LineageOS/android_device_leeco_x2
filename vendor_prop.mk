@@ -33,10 +33,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp.filter_holdfinger=50000 \
     persist.qfp.filter_insuffcov=6000 \
     persist.qfp.filter_liftfinger=0 \
-    persist.qfp.ssc_basis_s1=/persist/qc_senseid/bg_estimation/bg_small1_basis.dat \
-    persist.qfp.ssc_basis_s1_off=/persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat \
-    persist.qfp.ssc_basis_s2=/persist/qc_senseid/bg_estimation/bg_small2_basis.dat \
-    persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat \
+    persist.qfp.ssc_basis_s1=/mnt/vendor/persist/qc_senseid/bg_estimation/bg_small1_basis.dat \
+    persist.qfp.ssc_basis_s1_off=/mnt/vendor/persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat \
+    persist.qfp.ssc_basis_s2=/mnt/vendor/persist/qc_senseid/bg_estimation/bg_small2_basis.dat \
+    persist.qfp.ssc_basis_s2_off=/mnt/vendor/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat \
     persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
 # Radio
