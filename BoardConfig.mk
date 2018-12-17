@@ -43,6 +43,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 58139029504
 
+BOARD_ROOT_EXTRA_SYMLINKS += \
+    /data/vendor/misc/qti_fp:/data/misc/stargate
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
