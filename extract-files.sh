@@ -16,6 +16,12 @@
 # limitations under the License.
 #
 
+# If we're being sourced by the common script that we called,
+# stop right here. No need to go down the rabbit hole.
+if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
+	return
+fi
+
 set -e
 
 export DEVICE=x2
@@ -25,4 +31,4 @@ export VENDOR=leeco
 export DEVICE_BRINGUP_YEAR=2016
 
 # Use common extractor
-./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
+source "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

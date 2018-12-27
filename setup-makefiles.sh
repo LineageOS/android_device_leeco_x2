@@ -26,4 +26,4 @@ export VENDOR=leeco
 export DEVICE_BRINGUP_YEAR=2016
 
 # Call the common extractor
-./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
+source "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
