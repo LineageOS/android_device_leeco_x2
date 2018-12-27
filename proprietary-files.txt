@@ -392,7 +392,6 @@ vendor/firmware/sii6400_wihd_mhl.fw
 # Unsorted
 bin/ssr_diag:vendor/bin/ssr_diag
 bin/ssr_setup:vendor/bin/ssr_setup
-bin/tloc_daemon:vendor/bin/tloc_daemon
 bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
 etc/qxdm/1.cfg:vendor/etc/qxdm/1.cfg
 etc/qxdm/gps_log.cfg:vendor/etc/qxdm/gps_log.cfg
