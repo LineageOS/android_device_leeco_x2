@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc293b67_2956ac9f",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-31T09:15:47Z",
+      "side": 1,
+      "message": "SSR - subsystem restart\n\nYou can get rid of those.",
+      "range": {
+        "startLine": 393,
+        "startChar": 0,
+        "endLine": 394,
+        "endChar": 34
+      },
+      "revId": "95e8bcf7e609a368e5f78a6cb8add9d01199ce96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc018c0d_9847e06e",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-31T09:15:47Z",
+      "side": 1,
+      "message": "This is the image post processing daemon. You likely need it for things such as display modes (LiveDisplay).",
+      "range": {
+        "startLine": 395,
+        "startChar": 0,
+        "endLine": 395,
+        "endChar": 40
+      },
+      "revId": "95e8bcf7e609a368e5f78a6cb8add9d01199ce96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57d8c030_589df3e1",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 412,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-31T09:15:47Z",
+      "side": 1,
+      "message": "You can get rid of all these usf configs. The is related to QC\u0027s ultrasound solution.",
+      "range": {
+        "startLine": 398,
+        "startChar": 0,
+        "endLine": 412,
+        "endChar": 46
+      },
+      "revId": "95e8bcf7e609a368e5f78a6cb8add9d01199ce96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6660b3d_c150f12e",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 416,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-31T09:15:47Z",
+      "side": 1,
+      "message": "Were these blobs taken from Xiaomi at some point? These are also related to ultrasound.",
+      "range": {
+        "startLine": 413,
+        "startChar": 0,
+        "endLine": 416,
+        "endChar": 26
+      },
+      "revId": "95e8bcf7e609a368e5f78a6cb8add9d01199ce96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "caece85a_e1852106",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 421,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-31T09:15:47Z",
+      "side": 1,
+      "message": "Were these blobs taken from Xiaomi at some point? These are also related to ultrasound.",
+      "range": {
+        "startLine": 418,
+        "startChar": 0,
+        "endLine": 421,
+        "endChar": 28
+      },
+      "revId": "95e8bcf7e609a368e5f78a6cb8add9d01199ce96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
