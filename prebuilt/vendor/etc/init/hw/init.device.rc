@@ -72,16 +72,6 @@ on boot
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 664 /sys/devices/virtual/graphics/fb0/rgb
 
-   # wake_gesture
-    chown system system /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input3/wake_gesture
-    chmod 0666 /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input2/wake_gesture
-
-on post-fs
-    # Touchscreen
-    chown system system /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input3/0dbutton
-    chmod 0666 /sys/devices/soc/75ba000.i2c/i2c-12/12-004b/input/input3/0dbutton
-
-# msm specific files that need to be created on /data
 on post-fs-data
     # Create directories for Fingerprint
     mkdir /data/misc/stargate 0770 system system
