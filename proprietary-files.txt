@@ -323,6 +323,8 @@ vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/lib64/libmm-qdcm-diag.so
 
 # DRM - from x2 - 6.0.1/FIXNAOP5802011301S/letv11301725
+bin/tloc_daemon:vendor/bin/tloc_daemon|595ebc7c532ddb14a8c553b4ddfea10cb4fa3486
+bin/mdtpd:vendor/bin/mdtpd|eaf3a5e0144ad93a7f9716bcd55c84127e1068b5
 etc/firmware/cppf.b00:vendor/firmware/cppf.b00|68651058a1452fd5f7a404c94930a279ca13e3f5
 etc/firmware/cppf.b01:vendor/firmware/cppf.b01|85ddb6606c14e6b8d9d04ea5694d71f6a5280763
 etc/firmware/cppf.b02:vendor/firmware/cppf.b02|d4bc3fae8ce4acd4ec5101fa0f86c627805d3083
@@ -389,36 +391,3 @@ vendor/firmware/a530v3_seq.fw2
 vendor/firmware/cyccg.cybin
 vendor/firmware/cyccg_table.cybin
 vendor/firmware/sii6400_wihd_mhl.fw
-
-# Unsorted
-bin/ssr_diag:vendor/bin/ssr_diag
-bin/ssr_setup:vendor/bin/ssr_setup
-bin/tloc_daemon:vendor/bin/tloc_daemon
-bin/mdtpd:vendor/bin/mdtpd
-bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
-etc/qxdm/1.cfg:vendor/etc/qxdm/1.cfg
-etc/qxdm/gps_log.cfg:vendor/etc/qxdm/gps_log.cfg
-etc/usf/form_factor_mtp.cfg:vendor/etc/usf/form_factor_mtp.cfg
-etc/usf/mixer/mixer_paths_mtp.xml:vendor/etc/usf/mixer/mixer_paths_mtp.xml
-etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg:vendor/etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin:vendor/etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
-etc/usf/readme.txt:vendor/etc/usf/readme.txt
-etc/usf/version.txt:vendor/etc/usf/version.txt
-vendor/lib/libqcproximity.so
-vendor/lib/libual.so
-vendor/lib/libualutil.so
-vendor/lib/libusndroute.so
-vendor/lib64/libmm-dspp-utils.so
-vendor/lib64/libqcproximity.so
-vendor/lib64/libual.so
-vendor/lib64/libualutil.so
-vendor/lib64/libusndroute.so
