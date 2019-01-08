@@ -13,11 +13,20 @@ allow qfp-daemon qfp_proxy_service:service_manager { find };
 # Add IQfpService service
 allow qfp-daemon iqfp_service:service_manager { add };
 
-# R dir perms for persist qfp-daemon_data_file dir
-r_dir_file(qfp-daemon, qfp-daemon_data_file)
-
 # R dir perms for persist qc_senseid dir
 r_dir_file(qfp-daemon, sensors_persist_file)
 r_dir_file(qfp-daemon, persist_qc_senseid_file)
+
+# Permissions for /data/misc/stargate
+typeattribute qfp-daemon data_between_core_and_vendor_violators;
+allow qfp-daemon {
+  system_data_file
+  qfp_stargate_file
+}:dir { create_dir_perms };
+
+allow qfp-daemon {
+  system_data_file
+  qfp_stargate_file
+}:file { create_file_perms };
 
 binder_use(qfp-daemon);
