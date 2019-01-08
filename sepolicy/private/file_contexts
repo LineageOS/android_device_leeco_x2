@@ -1,0 +1,2 @@
+# Persist files
+/(mnt/vendor)/persist/qc_senseid(/.*)?                   u:object_r:persist_qc_senseid_file:s0
