@@ -7,3 +7,5 @@ allow qfp_boot_shell vendor_toolbox_exec:file { rx_file_perms };
 
 allow qfp_boot_shell persist_qc_senseid_file:dir { rw_dir_perms };
 allow qfp_boot_shell persist_qc_senseid_file:file { rw_file_perms };
+
+allow qfp_boot_shell mnt_vendor_file:dir { search };
