@@ -1,2 +1,5 @@
+# Data files
+/data/misc/stargate(/.*)?                              u:object_r:qfp_stargate_file:s0
+
 # Persist files
 /(mnt/vendor)/persist/qc_senseid(/.*)?                   u:object_r:persist_qc_senseid_file:s0
