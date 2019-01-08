@@ -3,3 +3,15 @@ allow tee persist_qc_senseid_file:file { create_file_perms };
 
 allow tee fingerprintd_data_file:dir { create_dir_perms };
 allow tee fingerprintd_data_file:file { create_file_perms };
+
+# Permissions for /data/misc/stargate
+typeattribute tee data_between_core_and_vendor_violators;
+allow tee {
+  system_data_file
+  qfp_stargate_file
+}:dir { create_dir_perms };
+
+allow tee {
+  system_data_file
+  qfp_stargate_file
+}:file { create_file_perms };
