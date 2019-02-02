@@ -19,9 +19,16 @@
 function blob_fixup() {
 	case "${1}" in
 
-	# binhaxxed to load cppf firmware from /vendor/firmware/
 	vendor/lib/libcppf.so)
+		# binhaxxed to load cppf firmware from /vendor/firmware/
 		sed -i -e 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"
+		# Hex edit /firmware/image to /vendor/firmware_mnt to delete the outdated rootdir symlinks
+		sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
+		;;
+
+	# Hex edit /firmware/image to /vendor/firmware_mnt to delete the outdated rootdir symlinks
+	vendor/lib64/libqfp-service.so)
+		sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
 	esac
 }
 
