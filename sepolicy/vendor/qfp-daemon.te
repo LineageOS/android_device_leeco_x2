@@ -24,9 +24,10 @@ allow qfp-daemon {
   qfp_stargate_file
 }:dir { create_dir_perms };
 
-allow qfp-daemon {
-  system_data_file
-  qfp_stargate_file
-}:file { create_file_perms };
+# FIXME
+# allow qfp-daemon {
+#   system_data_file
+#   qfp_stargate_file
+# }:file { create_file_perms };
 
 binder_use(qfp-daemon);
