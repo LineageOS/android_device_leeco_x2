@@ -127,12 +127,16 @@ etc/firmware/cppf.mbn:vendor/firmware/cppf.mbn|28e3191d603c7f984d220fdb2c3ac3971
 etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt|1f8e4f9951357354bb9cff7a714a36172693c749
 vendor/lib/libcppf.so|dbdb821249386131aef641be8c69cde4980d2740
 
-# Fingerprint - from Capricorn
--app/QFingerprintService/QFingerprintService.apk:vendor/app/QFingerprintService/QFingerprintService.apk|fbb50be6f000822d36e693b9cef4c59635a85903
-bin/qfp-daemon:vendor/bin/qfp-daemon|05447a1ce83dd7377e826bb80497f2d4a9c13ec9
-vendor/lib64/hw/fingerprint.qcom.so|019dfc2f66f3ee9c4d43d0f5e33ff8f6bf62f9b7
-vendor/lib64/libqfp-service.so|16a0c5be068a9133b348aac5e6c00ee91be13ed3
-vendor/lib64/qfp.wakeup.so|0b36ff46ca323885850c4049ddccfb354bb378df
+# Fingerprint - from platina - 9/PKQ1.181007.001/8.12.13
+framework/vendor.qti.hardware.fingerprint-V1.0-java.jar|3c39eb890d3be3489f04064050ae030a7c526229
+lib64/android.hardware.biometrics.fingerprint@2.1.so
+lib64/vendor.qti.hardware.fingerprint@1.0.so|62d56e0dfc6b69375ea988d9f462afc5077455db
+-vendor/app/QFingerprintService/QFingerprintService.apk|9a097720200d7415603419d2e8a0e0a75bcc6878
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|e058a4543b1b6abfd08e96134cdf0338a6908921
+vendor/bin/qfp-daemon|cda3adc40ffafd91fd121ec8d5d24f440f1ea040
+vendor/etc/permissions/qti_fingerprint_interface.xml|d3efc0abac8c064b3f8ccd783875b3d532972212
+vendor/lib64/libqfp-service.so|cbc135224735e8f8749e02a95606eb600ec1e062
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|62d56e0dfc6b69375ea988d9f462afc5077455db
 
 # Qualcomm Assertive Display
 etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
