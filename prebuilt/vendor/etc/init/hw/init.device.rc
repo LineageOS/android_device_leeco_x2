@@ -74,15 +74,10 @@ on boot
 
 on post-fs-data
     # Create directories for Fingerprint
-    mkdir /data/misc/stargate 0770 system system
-    mkdir /data/misc/stargate/bg_estimation 0770 system system
-    mkdir /data/misc/stargate/calib_test 0770 system system
-    mkdir /data/misc/stargate/database 0770 system system
-
-service vendor.qfp-boot /vendor/bin/qfp_boot.sh
-    class late_start
-    user system
-    oneshot
+    mkdir /data/vendor/misc/qti_fp 0770 system system
+    mkdir /data/vendor/misc/qti_fp/bg_estimation 0770 system system
+    mkdir /data/vendor/misc/qti_fp/calib_test 0770 system system
+    mkdir /data/vendor/misc/qti_fp/database 0770 system system
 
 service vendor.qfp-daemon /vendor/bin/qfp-daemon
     class late_start
