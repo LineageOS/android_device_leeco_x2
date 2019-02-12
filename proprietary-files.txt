@@ -127,8 +127,10 @@ etc/firmware/cppf.mbn:vendor/firmware/cppf.mbn|28e3191d603c7f984d220fdb2c3ac3971
 etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt|1f8e4f9951357354bb9cff7a714a36172693c749
 vendor/lib/libcppf.so|ac30e1d7ed3eb36e4fc90eb292a982924ee359e3
 
+# Fingerprint - from X00TD - 8.1.0/OPM1/15.2016.1808.326-20180828
+-vendor/app/QFingerprintService/QFingerprintService.apk|48b6c56b6f8fa5e814a3e1d22a1dc5b30230f02c
+
 # Fingerprint - from Capricorn
--app/QFingerprintService/QFingerprintService.apk:vendor/app/QFingerprintService/QFingerprintService.apk|fbb50be6f000822d36e693b9cef4c59635a85903
 bin/qfp-daemon:vendor/bin/qfp-daemon|05447a1ce83dd7377e826bb80497f2d4a9c13ec9
 vendor/lib64/hw/fingerprint.qcom.so|019dfc2f66f3ee9c4d43d0f5e33ff8f6bf62f9b7
 vendor/lib64/libqfp-service.so|16a0c5be068a9133b348aac5e6c00ee91be13ed3
