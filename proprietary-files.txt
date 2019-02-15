@@ -125,7 +125,7 @@ etc/firmware/cppf.b05:vendor/firmware/cppf.b05|a92f924b67dfcdaf26460c5a3ef92d737
 etc/firmware/cppf.b06:vendor/firmware/cppf.b06|d37002324b5c345d45d0c90178c3ed62563b5c0c
 etc/firmware/cppf.mbn:vendor/firmware/cppf.mbn|28e3191d603c7f984d220fdb2c3ac39710f38a3b
 etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt|1f8e4f9951357354bb9cff7a714a36172693c749
-vendor/lib/libcppf.so|dbdb821249386131aef641be8c69cde4980d2740
+vendor/lib/libcppf.so|ac30e1d7ed3eb36e4fc90eb292a982924ee359e3
 
 # Fingerprint - from Capricorn
 -app/QFingerprintService/QFingerprintService.apk:vendor/app/QFingerprintService/QFingerprintService.apk|fbb50be6f000822d36e693b9cef4c59635a85903
