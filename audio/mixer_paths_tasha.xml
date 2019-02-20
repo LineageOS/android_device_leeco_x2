@@ -26,7 +26,7 @@
     <!--ctl name="LINEOUT4 Volume" value="13" /-->
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
-    <ctl name="RX0 Digital Volume" value="89" />
+    <ctl name="RX0 Digital Volume" value="92" />
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
@@ -200,7 +200,7 @@
     <ctl name="AMIC MUX11" value="ZERO" />
     <ctl name="AMIC MUX12" value="ZERO" />
     <ctl name="AMIC MUX13" value="ZERO" />
-    <ctl name="RX INT0_1 MIX1 INP0" value="ZERO" />
+    <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
     <ctl name="RX INT1_1 MIX1 INP0" value="ZERO" />
     <ctl name="RX INT2_1 MIX1 INP0" value="ZERO" />
     <ctl name="RX INT3_1 MIX1 INP0" value="ZERO" />
@@ -600,11 +600,13 @@
     </path>
 
     <path name="deep-buffer-playback smartpa">
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
-        <path name="deep-buffer-playback" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback hdmi">
@@ -673,11 +675,13 @@
     </path>
 
     <path name="low-latency-playback smartpa">
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback speaker-protected">
-        <path name="low-latency-playback" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback hdmi">
@@ -827,11 +831,13 @@
     </path>
 
     <path name="compress-offload-playback smartpa">
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback speaker-protected">
-        <path name="compress-offload-playback" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback hdmi">
@@ -2282,6 +2288,15 @@
         <ctl name="EAR PA Gain" value="G_6_DB" />
     </path>
 
+    <path name="earpiece">
+        <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
+        <ctl name="SLIM_0_RX Channels" value="Two" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="EAR PA Gain" value="G_6_DB" />
+        <ctl name="RX0 Digital Volume" value="92" />
+    </path>
+
     <path name="handset-mic">
         <path name="adc1" />
         <ctl name="ADC1 Volume" value="16" />
@@ -2343,6 +2358,7 @@
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="Two" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="ZERO" />
         <ctl name="RX INT1_2 MUX" value="RX0" />
         <ctl name="RX INT2_2 MUX" value="RX1" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
@@ -2394,6 +2410,7 @@
 
     <path name="voice-handset">
         <path name="handset" />
+        <ctl name="RX0 Digital Volume" value="89" />
     </path>
 
     <path name="voice-handset-tmus">
