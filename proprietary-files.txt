@@ -13,6 +13,15 @@ etc/drc/drc_cfg_AZ.txt:vendor/etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key:vendor/etc/dts/dts-m6m8-lic.key
 etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 
+# Audio (ACDB) - from max_plus - Letv/LeMaxPro_CN/max_plus:6.0.1/EEXCNFN5601305161S/letv05161638
+vendor/etc/acdbdata/MTP/max_plus/MTP_Bluetooth_cal.acdb|c9d513e01d033f229d33138ab4175dc0190cca3e
+vendor/etc/acdbdata/MTP/max_plus/MTP_General_cal.acdb|72f32f7d8d5a4138351193567c6ea3432f91dcea
+vendor/etc/acdbdata/MTP/max_plus/MTP_Global_cal.acdb|ea97b23188a173e639e774095a9c1605386dad41
+vendor/etc/acdbdata/MTP/max_plus/MTP_Handset_cal.acdb|68b1a1cf5b95371d074a9d64bfe6565e7596e9c3
+vendor/etc/acdbdata/MTP/max_plus/MTP_Hdmi_cal.acdb|6e357a226cd985452130d8fe423ffd88c3e701a1
+vendor/etc/acdbdata/MTP/max_plus/MTP_Headset_cal.acdb|f7371db4042b6a4beb576587248168f806c69473
+vendor/etc/acdbdata/MTP/max_plus/MTP_Speaker_cal.acdb|284494db54be289213c0a79556a5963f46de464f
+
 # Audio (amplifier calibration sound) - from gemini
 etc/silence_short.wav:vendor/etc/silence_short.wav|12b2b5e31a1405c95f70b4e3e88d75d01e1ca883
 
@@ -20,7 +29,6 @@ etc/silence_short.wav:vendor/etc/silence_short.wav|12b2b5e31a1405c95f70b4e3e88d7
 etc/camera/imx230_chromatix.xml:vendor/etc/camera/imx230_chromatix.xml|29ee6610f19eddc2208e10a37521408270f748db
 etc/camera/imx230_lg_chromatix.xml:vendor/etc/camera/imx230_lg_chromatix.xml|29ee6610f19eddc2208e10a37521408270f748db
 etc/camera/imx230_sunny_chromatix.xml:vendor/etc/camera/imx230_sunny_chromatix.xml|29ee6610f19eddc2208e10a37521408270f748db
-etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml|0f1117493079b85d73dd9a1c8725a0fe3d3d8c3f
 vendor/lib/libflash_i2c.so|65905c54ef3e3ad736e189dcdd241ce6dded7727
 vendor/lib/libmmcamera_imx230.so|25c601526c14596fe7de6b9fbde59de928e3351f
 vendor/lib/libmmcamera_imx230_lg.so|9294709d170decbe649270721cbcdad4e681291d
@@ -30,6 +38,14 @@ vendor/lib/libmmcamera_sony_imx230_plus_eeprom.so|f6c591a05172a26929bef2c85bf346
 vendor/lib/libSonyIMX230PdafLibrary.so|50719675b89123ef9fb0047a07970f14c9840736
 vendor/lib/libSonyIMX230_lg_PdafLibrary.so|50719675b89123ef9fb0047a07970f14c9840736
 vendor/lib/libSonyIMX230_sunny_PdafLibrary.so|50719675b89123ef9fb0047a07970f14c9840736
+
+# Camera - modified to support max_plus ov4688 camera
+vendor/etc/camera/msm8996_camera.xml|e4f189dc27f1dd2c794426dd4f80c339acaaaba8
+
+# Camera (ov4688) - from zl1 - 6.0.1/WAXCNFN5902012312S/letv01060151
+etc/camera/ov4688_chromatix.xml:vendor/etc/camera/ov4688_chromatix.xml|6770b003b812c4a824d7205d7b79426d7a5cd744
+vendor/lib/libmmcamera_ov4688.so|cc4c344caadbd2f27f420187923affd7298579b1
+vendor/lib/libmmcamera_ov4688_eeprom.so|78a947640fb13082c7d3c109838c7fcdcd033c5a
 
 # Camera actuators - from le_x10 (x850) - 7.1.1/LEXCNFN6061705181T/letv05181516
 vendor/lib/libactuator_bu63165.so|2e823d666d11374919a23e19fb34803816479953
@@ -82,6 +98,28 @@ vendor/lib/libchromatix_imx230_video_4k.so|16296172a36e49b6ae3046532ba902359af31
 vendor/lib/libchromatix_imx230_video_hdr.so|83bfe58fd2eb124bfd2d41f4002e13b9af1ed175
 vendor/lib/libchromatix_imx230_zsl_preview_lc898212xd.so|f1e6775df5eb0f9b6726eabda895ad758f78118a
 vendor/lib/libchromatix_imx230_zsl_video_lc898212xd.so|5b8f5f3646182410cd418afa54aada067ab05ef4
+
+# Camera chromatix (ov4688) - from zl1 - 6.0.1/WAXCNFN5902012312S/letv01060151
+vendor/lib/libchromatix_ov4688_hfr_90_ad5823.so|fba5a1be90b9e475586991c0e53ebd8a484f2861
+vendor/lib/libchromatix_ov4688_zsl_preview_ad5823.so|e8bb6b010d5a0853739da63c35f6fbb6b551e209
+vendor/lib/libchromatix_ov4688_cpp_snapshot.so|2b5637841403f5bb82f24e711bab44bedd5584f2
+vendor/lib/libchromatix_ov4688_hfr_60_ad5823.so|d0395035d72bdf042aa111cc17a2ce842ad586a7
+vendor/lib/libchromatix_ov4688_snapshot.so|53b016995127a0531848b2b429f130a701605c9f
+vendor/lib/libchromatix_ov4688_cpp_hfr_60.so|af7644e01bae2bbb7edcc6facf8dd954858d7694
+vendor/lib/libchromatix_ov4688_postproc.so|acdb24b5299f390336ee09c851a72abc7d308734
+vendor/lib/libchromatix_ov4688_hfr_60.so|a321ce54d6f73f2af6bb373bffffe81914c1007e
+vendor/lib/libchromatix_ov4688_common.so|a9caf270ec6258abda191e9aeae1fcf9b19db964
+vendor/lib/libchromatix_ov4688_cpp_hfr_90.so|05b4674d50a53cef1414196c43180b798ef8e2de
+vendor/lib/libchromatix_ov4688_preview.so|4fba0b1de1498d648543d43397577f9d2101e067
+vendor/lib/libchromatix_ov4688_hfr_120_ad5823.so|72769f4875076614984b49b2bb87c3011858ffd0
+vendor/lib/libchromatix_ov4688_zsl_video_ad5823.so|929021c7886fb02ec0477bd40c52c7b48a824500
+vendor/lib/libchromatix_ov4688_cpp_hfr_120.so|4fb5ac1c94c732087588661206c08e20e464087a
+vendor/lib/libchromatix_ov4688_cpp_preview.so|7bb66b0a1c016e7283a540c014773cec43b98389
+vendor/lib/libchromatix_ov4688_cpp_liveshot.so|1265d7ddf803705157922ad0c2de20d820f9072c
+vendor/lib/libchromatix_ov4688_default_video.so|9227f8199ec6cd5d697b828c160cf8ea5a577160
+vendor/lib/libchromatix_ov4688_cpp_video.so|9c509ecabda790d741c523a417ea4f8f328f0422
+vendor/lib/libchromatix_ov4688_hfr_120.so|acead78f70adb40bddf31217414d050e40b8e879
+vendor/lib/libchromatix_ov4688_hfr_90.so|461b5770e107b2b27ffe87b09ee1cbcd5b24d8bd
 
 # Camera chromatix (ov8865) - from le_x10 (x850) - 7.1.1/LEXCNFN6061705181T/letv05181516
 vendor/lib/libchromatix_ov8865_ofilm_common.so|397405ffab29d405cf68b9a9467f6e64b70bdc26
@@ -144,11 +182,12 @@ vendor/lib64/qfp.wakeup.so|20833d76ecac57ca0d42759a7b3ecbb7ce2ebb08
 vendor/bin/charger|0a3861fd5b997337a40926e7ddb2829461cfded8
 
 # Qualcomm Assertive Display
+etc/ad_calib.cfg:vendor/etc/ad_calib.cfg
 etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
 
 # Sensor configuration - from x2 and modified to work for Oreo and above
 etc/sensors/hals.conf:vendor/etc/sensors/hals.conf|7a965b49a99064c595cb21f845e812e759390688
-etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf|1c409db7c91db55b53effc7d93272cea0625e63c
+etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf|390c001475d1bd913131b6faba080244e5e3a9ec
 
 # Signed graphics firmware
 etc/firmware/a530_zap.b00:vendor/firmware/a530_zap.b00
@@ -156,6 +195,11 @@ etc/firmware/a530_zap.b01:vendor/firmware/a530_zap.b01
 etc/firmware/a530_zap.b02:vendor/firmware/a530_zap.b02
 etc/firmware/a530_zap.elf:vendor/firmware/a530_zap.elf
 etc/firmware/a530_zap.mdt:vendor/firmware/a530_zap.mdt
+
+# Signed graphics firmware - from max_plus - Letv/LeMaxPro_CN/max_plus:6.0.1/EEXCNFN5601305161S/letv05161638
+vendor/firmware/max_plus/a530_zap.b01|5433750e3ab0405032b76df628515b057b9a4e66
+vendor/firmware/max_plus/a530_zap.elf|41265e6c1f4aa70fdefa600879c507a9c5e83d24
+vendor/firmware/max_plus/a530_zap.mdt|ad86bfae9b0d5dd33cfe8c6b495ec835b4aaa54d
 
 # USB firmware
 etc/firmware/cyccg.cybin:vendor/firmware/cyccg.cybin

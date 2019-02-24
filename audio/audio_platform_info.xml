@@ -35,14 +35,14 @@
         <device name="SND_DEVICE_OUT_SPEAKER_VBAT" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_HEADPHONES" acdb_id="10"/>
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_44P1K" acdb_id="10"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_48K" acdb_id="50"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_96K" acdb_id="50"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_192K" acdb_id="50"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_44P1K" acdb_id="50"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_48K" acdb_id="50"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_96K" acdb_id="50"/> -->
-        <!-- <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_192K" acdb_id="50"/> -->
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_44P1K" acdb_id="10"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_48K" acdb_id="50"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_96K" acdb_id="50"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_192K" acdb_id="50"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_44P1K" acdb_id="50"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_48K" acdb_id="50"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_96K" acdb_id="50"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_192K" acdb_id="50"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_44_1" acdb_id="50"/>
         <device name="SND_DEVICE_OUT_LINE" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" acdb_id="57"/>
@@ -167,6 +167,15 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="smartpa-and-usb-headphones" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="TERT_MI2S_RX-and-AUX_PCM_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="TERT_MI2S_RX-and-AUX_PCM_RX"/>
+
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_44P1K" alias="headphones-hifi-24bit-44P1KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_48K" alias="headphones-hifi-24bit-48KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_96K" alias="headphones-hifi-24bit-96KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_24BIT_192K" alias="headphones-hifi-24bit-192KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_44P1K" alias="headphones-hifi-16bit-44P1KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_48K" alias="headphones-hifi-16bit-48KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_96K" alias="headphones-hifi-16bit-96KHZ"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_16BIT_192K" alias="headphones-hifi-16bit-192KHZ"/>
     </backend_names>
 
     <device_names>

@@ -375,6 +375,38 @@
     <ctl name="X Profile" value="hq" />
     <!-- smartpa end -->
 
+    <!-- hifi -->
+    <ctl name="Es9018 Crystal 45M Switch" value="0" />
+    <ctl name="Es9018 Crystal 49M Switch" value="0" />
+    <ctl name="Es9018 Bypass Switch" value="0" />
+    <ctl name="Es9018 HIFI 45M deep-buffer" value="Off" />
+    <ctl name="Es9018 HIFI 49M deep-buffer" value="Off" />
+    <ctl name="Es9018 HIFI 45M compress-offload" value="Off" />
+    <ctl name="Es9018 HIFI 49M compress-offload" value="Off" />
+    <ctl name="Es9018 HIFI 45M low-latency" value="Off" />
+    <ctl name="Es9018 HIFI 49M low-latency" value="Off" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia2" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia3" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia6" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia7" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia8" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia9" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia10" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia11" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia12" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia13" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia14" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia15" value="0" />
+    <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia16" value="0" />
+    <!-- hifi end -->
+
+    <!-- wcd9335 swr workaround -->
+    <ctl name="WCD9335_SWR_LOW_POWER" value="0" />
+    <!-- wcd9335 swr end -->
+
     <!-- Voice -->
     <ctl name="SLIM_0_RX_Voice Mixer CSVoice" value="0" />
     <ctl name="SLIM_6_RX_Voice Mixer CSVoice" value="0" />
@@ -625,6 +657,58 @@
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
+    <path name="deep-buffer-playback hifi-24bit-44P1KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 45M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-24bit-48KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-24bit-96KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-24bit-192KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-16bit-44P1KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 45M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-16bit-48KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-16bit-96KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback hifi-16bit-192KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M deep-buffer" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback smartpa">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
     <path name="deep-buffer-playback smartpa">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -696,6 +780,54 @@
 
     <path name="low-latency-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-24bit-44P1KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 45M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-24bit-48KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-24bit-96KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-24bit-192KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-16bit-44P1KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 45M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-16bit-48KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-16bit-96KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback hifi-16bit-192KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M low-latency" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback smartpa">
@@ -850,6 +982,54 @@
 
     <path name="compress-offload-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-24bit-44P1KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 45M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-24bit-48KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-24bit-96KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-24bit-192KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S24_LE" />
+        <ctl name="Es9018 HIFI 49M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-16bit-44P1KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 45M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-16bit-48KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-16bit-96KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback hifi-16bit-192KHZ">
+        <ctl name="SEC_MI2S BitWidth" value="S16_LE" />
+        <ctl name="Es9018 HIFI 49M compress-offload" value="On" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback smartpa">
@@ -2305,6 +2485,7 @@
     </path>
 
     <path name="handset">
+        <ctl name="WCD9335_SWR_LOW_POWER" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
@@ -2370,6 +2551,8 @@
     </path>
 
     <path name="headphones">
+        <ctl name="WCD9335_SWR_LOW_POWER" value="1" />
+        <ctl name="Es9018 Bypass Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="Two" />
@@ -2377,6 +2560,30 @@
         <ctl name="RX INT2_2 MUX" value="RX1" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
+    </path>
+
+    <path name="headphones-hifi-24bit-44P1KHZ">
+    </path>
+
+    <path name="headphones-hifi-24bit-48KHZ">
+    </path>
+
+    <path name="headphones-hifi-24bit-96KHZ">
+    </path>
+
+    <path name="headphones-hifi-24bit-192KHZ">
+    </path>
+
+    <path name="headphones-hifi-16bit-44P1KHZ">
+    </path>
+
+    <path name="headphones-hifi-16bit-48KHZ">
+    </path>
+
+    <path name="headphones-hifi-16bit-96KHZ">
+    </path>
+
+    <path name="headphones-hifi-16bit-192KHZ">
     </path>
 
     <path name="headphones-44.1">
