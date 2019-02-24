@@ -29,7 +29,7 @@ DEVICE_PATH := device/leeco/x2
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := le_x2,le_x2_india,le_x2_na,LeMax2_CN,LeMax2_NA,LeMax2_WW,LeMax2
+TARGET_OTA_ASSERT_DEVICE := le_x2,le_x2_india,le_x2_na,LeMax2_CN,LeMax2_NA,LeMax2_WW,LeMax2,max_plus,LeMaxPro_CN
 
 # Kernel
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
