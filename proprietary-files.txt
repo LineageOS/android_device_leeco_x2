@@ -1,15 +1,17 @@
+# x2 device proprietary files - from LeEco/LeMax2_CN/le_x2:6.0.1/FEXCNFN6003009092S/298, unless pinned
+
 # Audio (ACDB)
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/workspaceFile.qwsp
+etc/acdbdata/MTP/letv/MTP_Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/letv/MTP_General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP/letv/workspaceFile.qwsp:vendor/etc/acdbdata/MTP/workspaceFile.qwsp
 etc/drc/drc_cfg_AZ.txt:vendor/etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key:vendor/etc/dts/dts-m6m8-lic.key
-vendor/firmware/tfa98xx.cnt
+etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 
 # Audio (amplifier calibration sound) - from gemini
 etc/silence_short.wav:vendor/etc/silence_short.wav|12b2b5e31a1405c95f70b4e3e88d75d01e1ca883
@@ -110,22 +112,22 @@ vendor/lib/libchromatix_ov8865_ofilm_zsl_preview.so|d69143e5107ba037ab777b50854c
 vendor/lib/libchromatix_ov8865_ofilm_zsl_video.so|7c3b572d88efc6f0253601b7b034bbc53c4ab4a6
 
 # Display calibration
-vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
-vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml
-vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
+etc/qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml:vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
+etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml:vendor/etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml
+etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml:vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/lib64/libmm-qdcm-diag.so
 
-# DRM - from x2 - 6.0.1/FIXNAOP5802011301S/letv11301725
-etc/firmware/cppf.b00:vendor/firmware/cppf.b00|68651058a1452fd5f7a404c94930a279ca13e3f5
-etc/firmware/cppf.b01:vendor/firmware/cppf.b01|85ddb6606c14e6b8d9d04ea5694d71f6a5280763
-etc/firmware/cppf.b02:vendor/firmware/cppf.b02|d4bc3fae8ce4acd4ec5101fa0f86c627805d3083
-etc/firmware/cppf.b03:vendor/firmware/cppf.b03|aaf89a6972e5cd6cde7e6d0a6e725c49ba6dbd58
-etc/firmware/cppf.b04:vendor/firmware/cppf.b04|2ac4cac2893970a48e270fa06416cbf90cde36d3
-etc/firmware/cppf.b05:vendor/firmware/cppf.b05|a92f924b67dfcdaf26460c5a3ef92d7376ca33f6
-etc/firmware/cppf.b06:vendor/firmware/cppf.b06|d37002324b5c345d45d0c90178c3ed62563b5c0c
-etc/firmware/cppf.mbn:vendor/firmware/cppf.mbn|28e3191d603c7f984d220fdb2c3ac39710f38a3b
-etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt|1f8e4f9951357354bb9cff7a714a36172693c749
-vendor/lib/libcppf.so|ac30e1d7ed3eb36e4fc90eb292a982924ee359e3
+# DRM
+etc/firmware/cppf.b00:vendor/firmware/cppf.b00
+etc/firmware/cppf.b01:vendor/firmware/cppf.b01
+etc/firmware/cppf.b02:vendor/firmware/cppf.b02
+etc/firmware/cppf.b03:vendor/firmware/cppf.b03
+etc/firmware/cppf.b04:vendor/firmware/cppf.b04
+etc/firmware/cppf.b05:vendor/firmware/cppf.b05
+etc/firmware/cppf.b06:vendor/firmware/cppf.b06
+etc/firmware/cppf.mbn:vendor/firmware/cppf.mbn
+etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt
+vendor/lib/libcppf.so
 
 # Fingerprint - from X00TD - 8.1.0/OPM1/15.2016.1808.326-20180828
 -vendor/app/QFingerprintService/QFingerprintService.apk|48b6c56b6f8fa5e814a3e1d22a1dc5b30230f02c
@@ -140,13 +142,13 @@ vendor/lib64/qfp.wakeup.so|0b36ff46ca323885850c4049ddccfb354bb378df
 etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
 
 # Signed graphics firmware
-vendor/firmware/a530_zap.b00
-vendor/firmware/a530_zap.b01
-vendor/firmware/a530_zap.b02
-vendor/firmware/a530_zap.elf
-vendor/firmware/a530_zap.mdt
+etc/firmware/a530_zap.b00:vendor/firmware/a530_zap.b00
+etc/firmware/a530_zap.b01:vendor/firmware/a530_zap.b01
+etc/firmware/a530_zap.b02:vendor/firmware/a530_zap.b02
+etc/firmware/a530_zap.elf:vendor/firmware/a530_zap.elf
+etc/firmware/a530_zap.mdt:vendor/firmware/a530_zap.mdt
 
 # USB firmware
-vendor/firmware/cyccg.cybin
-vendor/firmware/cyccg_table.cybin
-vendor/firmware/sii6400_wihd_mhl.fw
+etc/firmware/cyccg.cybin:vendor/firmware/cyccg.cybin
+etc/firmware/cyccg_table.cybin:vendor/firmware/cyccg_table.cybin
+etc/firmware/sii6400_wihd_mhl.fw:vendor/firmware/sii6400_wihd_mhl.fw
