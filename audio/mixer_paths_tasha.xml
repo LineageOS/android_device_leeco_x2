@@ -1569,7 +1569,6 @@
     <path name="voicemmode1-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
-        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
     </path>
 
     <path name="voice-call hdmi">
@@ -1605,7 +1604,6 @@
     <path name="voicemmode2-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
-        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
     </path>
 
     <path name="voice2-call">
