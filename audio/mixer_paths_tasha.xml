@@ -1568,8 +1568,8 @@
 
     <path name="voicemmode1-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
-        <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
+        <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
     </path>
 
     <path name="voice-call hdmi">
@@ -1604,8 +1604,8 @@
 
     <path name="voicemmode2-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
-        <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
+        <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
     </path>
 
     <path name="voice2-call">
@@ -1860,8 +1860,8 @@
 
     <path name="compress-voip-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer Voip" value="1" />
-        <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
+        <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
 
     <path name="compress-voip-call headphones">
@@ -2188,6 +2188,10 @@
         <ctl name="X Profile" value="speechwb" />
     </path>
 
+    <path name="speaker-stereo">
+        <path name="speaker" />
+    </path>
+
     <path name="speaker-liquid">
         <path name="speaker" />
     </path>
@@ -2226,7 +2230,6 @@
 
     <path name="speaker-mic">
         <path name="adc4" />
-        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="echo-reference-audio-ec-speaker">
@@ -2294,12 +2297,12 @@
 
     <path name="handset-mic-cdp">
         <path name="adc1" />
-        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
     </path>
 
     <path name="handset-mic-sbc">
         <path name="adc5" />
-        <ctl name="ADC5 Volume" value="16" />
+        <ctl name="ADC5 Volume" value="12" />
     </path>
 
     <path name="three-mic">
@@ -2413,6 +2416,10 @@
         <path name="speaker-mono-wb" />
     </path>
 
+    <path name="voice-speaker-stereo">
+        <path name="voice-speaker" />
+    </path>
+
     <path name="voice-speaker-fluid">
         <path name="speaker-fluid" />
     </path>
@@ -2423,7 +2430,7 @@
 
     <path name="voice-speaker-mic">
         <path name="speaker-mic" />
-        <ctl name="ADC4 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="10" />
     </path>
 
     <path name="voice-headphone-mic">
@@ -2480,8 +2487,8 @@
     </path>
 
     <path name="anc-headphones">
-	<ctl name="COMP1 Switch" value="0" />
-	<ctl name="COMP2 Switch" value="0" />
+        <ctl name="COMP1 Switch" value="0" />
+        <ctl name="COMP2 Switch" value="0" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -2525,8 +2532,8 @@
     </path>
 
     <path name="voice-anc-headphones">
-	<ctl name="COMP1 Switch" value="0" />
-	<ctl name="COMP2 Switch" value="0" />
+        <ctl name="COMP1 Switch" value="0" />
+        <ctl name="COMP2 Switch" value="0" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -2560,8 +2567,8 @@
     </path>
 
     <path name="voice-anc-fb-headphones">
-	<ctl name="COMP1 Switch" value="0" />
-	<ctl name="COMP2 Switch" value="0" />
+        <ctl name="COMP1 Switch" value="0" />
+        <ctl name="COMP2 Switch" value="0" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -2613,7 +2620,7 @@
 
     <path name="voice-rec-mic">
         <path name="adc4" />
-        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="12" />
     </path>
 
     <path name="audio-rec-mic">
@@ -2673,9 +2680,9 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC4" />
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
-        <ctl name="ADC1 Volume" value="16" />
-        <ctl name="ADC5 Volume" value="16" />
-        <ctl name="ADC4 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC5 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
     </path>
 
     <!-- Dual MIC devices -->
@@ -2706,8 +2713,8 @@
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
-        <ctl name="ADC1 Volume" value="16" />
-        <ctl name="ADC4 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
     </path>
 
     <path name="dmic-endfire-liquid">
@@ -2717,14 +2724,14 @@
 
     <path name="handset-stereo-dmic-ef">
         <path name="handset-dmic-endfire" />
-        <ctl name="ADC1 Volume" value="16" />
-        <ctl name="ADC4 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
         <path name="speaker-dmic-endfire" />
-        <ctl name="ADC1 Volume" value="16" />
-        <ctl name="ADC4 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
     </path>
 
     <path name="voice-dmic-ef-tmus">
@@ -2741,14 +2748,14 @@
 
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire" />
-        <ctl name="ADC1 Volume" value="16" />
-        <ctl name="ADC4 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="12" />
     </path>
 
     <path name="voice-rec-dmic-ef-fluence">
         <path name="dmic-endfire" />
-        <ctl name="ADC1 Volume" value="16" />
-        <ctl name="ADC5 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC5 Volume" value="12" />
     </path>
 
     <path name="handset-stereo-dmic-ef-liquid">
@@ -2883,7 +2890,7 @@
 
     <path name="voice-tty-full-headset-mic">
         <path name="adc2" />
-        <ctl name="ADC2 Volume" value="13" />
+        <ctl name="ADC2 Volume" value="12" />
     </path>
 
     <path name="voice-tty-hco-headset-mic">
@@ -2919,4 +2926,3 @@
     <path name="voice-rx">
     </path>
 </mixer>
-
