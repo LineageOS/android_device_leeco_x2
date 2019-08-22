@@ -141,6 +141,10 @@ vendor/lib64/qfp.wakeup.so|0b36ff46ca323885850c4049ddccfb354bb378df
 # Qualcomm Assertive Display
 etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
 
+# Sensor configuration - from x2 and modified to work for Oreo and above
+etc/sensors/hals.conf:vendor/etc/sensors/hals.conf|7a965b49a99064c595cb21f845e812e759390688
+etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf|1c409db7c91db55b53effc7d93272cea0625e63c
+
 # Signed graphics firmware
 etc/firmware/a530_zap.b00:vendor/firmware/a530_zap.b00
 etc/firmware/a530_zap.b01:vendor/firmware/a530_zap.b01
