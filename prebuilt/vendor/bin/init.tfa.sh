@@ -15,13 +15,13 @@
 
 function enable_speaker {
 	echo "enabling speaker"
-	tinymix 'SLIMBUS_0_RX Audio Mixer MultiMedia1' 1
+	tinymix 'TERT_MI2S_RX Audio Mixer MultiMedia1' 1
 	tinymix 'X Profile' 'hq'
 }
 
 function disable_speaker {
 	echo "disabling speaker"
-	tinymix 'SLIMBUS_0_RX Audio Mixer MultiMedia1' 0
+	tinymix 'TERT_MI2S_RX Audio Mixer MultiMedia1' 0
 }
 
 echo "Volume is ignored by this script for now"
