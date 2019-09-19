@@ -1,0 +1,17 @@
+// Fingerprint sensor
+cc_library_shared {
+    name: "libfpshim",
+    proprietary: true,
+    defaults: ["hidl_defaults"],
+    srcs: [
+        "libshims.cpp",
+    ],
+    cflags: [
+        "-Werror",
+        "-Wextra",
+        "-Wall",
+    ],
+    shared_libs: [
+        "libutils",
+    ],
+}
