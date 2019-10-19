@@ -138,6 +138,9 @@ vendor/lib64/hw/fingerprint.qcom.so|019dfc2f66f3ee9c4d43d0f5e33ff8f6bf62f9b7
 vendor/lib64/libqfp-service.so|d073a9e341d5d031688d8d3eeff7d7ec5a7c3319
 vendor/lib64/qfp.wakeup.so|0b36ff46ca323885850c4049ddccfb354bb378df
 
+# Offline charger
+vendor/bin/charger|0a3861fd5b997337a40926e7ddb2829461cfded8
+
 # Qualcomm Assertive Display
 etc/ad_calib_x2.cfg:vendor/etc/ad_calib_x2.cfg
 
