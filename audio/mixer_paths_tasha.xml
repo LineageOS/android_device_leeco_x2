@@ -2957,4 +2957,9 @@
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
     </path>
 
+    <path name="voice-tx">
+    </path>
+
+    <path name="voice-rx">
+    </path>
 </mixer>
