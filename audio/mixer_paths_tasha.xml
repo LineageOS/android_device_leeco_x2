@@ -1813,7 +1813,7 @@
     </path>
 
     <path name="hfp-sco">
-        <ctl name="HFP_AUX_UL_HL Switch" value="1" />
+        <ctl name="HFP_PRI_AUX_UL_HL Switch" value="1" />
         <ctl name="SLIMBUS_0_RX Port Mixer AUX_PCM_UL_TX" value="1" />
         <ctl name="AUX_PCM_RX Audio Mixer MultiMedia6" value="1" />
         <ctl name="MultiMedia6 Mixer SLIM_0_TX" value="1" />
