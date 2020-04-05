@@ -1,7 +1,6 @@
 # Product
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.product=x2 \
-    ro.internal.model="Le X820" \
     ro.config.le_hardware_version=HW_1.0.0 \
     ro.display.series="Le Max2"
 
