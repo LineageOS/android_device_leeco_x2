@@ -1,10 +1,17 @@
 typeattribute hal_fingerprint_default binder_in_vendor_violators;
 
-allow hal_fingerprint_default iqfp_service:service_manager { find };
+binder_call(hal_fingerprint_default, vndservicemanager);
+
 allow hal_fingerprint_default qfp-daemon:binder { call transfer };
+
+# Access VND QFP Android Proxy
+allow hal_fingerprint_default vnd_iqfp_service:service_manager { find };
 
 # access to /data/system/users/[0-9]+/fpdata
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 allow hal_fingerprint_default fingerprintd_data_file:dir { rw_dir_perms };
+
+# RW persmissions for /dev/vndbinder
+allow hal_fingerprint_default vndbinder_device:chr_file { rw_file_perms };
 
 binder_use(hal_fingerprint_default);

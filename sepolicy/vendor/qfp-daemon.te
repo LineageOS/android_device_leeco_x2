@@ -5,17 +5,20 @@ binder_call(qfp-daemon, hal_fingerprint_default);
 allow qfp-daemon self:socket create_socket_perms;
 allowxperm qfp-daemon self:socket ioctl msm_sock_ipc_ioctls;
 
-allow qfp-daemon servicemanager:binder { call transfer };
+allow qfp-daemon vndservicemanager:binder { call transfer };
 
-# Access QFP Android Proxy
-allow qfp-daemon qfp_proxy_service:service_manager { find };
+# Access VND QFP Android Proxy
+allow qfp-daemon vnd_qfp_proxy_service:service_manager { find };
 
-# Add IQfpService service
-allow qfp-daemon iqfp_service:service_manager { add };
+# Add VND IQfpService service
+allow qfp-daemon vnd_iqfp_service:service_manager { add };
 
 # R dir perms for persist qc_senseid dir
 r_dir_file(qfp-daemon, sensors_persist_file)
 r_dir_file(qfp-daemon, persist_qc_senseid_file)
+
+# RW persmissions for /dev/vndbinder
+allow qfp-daemon vndbinder_device:chr_file { rw_file_perms };
 
 # Permissions for /data/misc/stargate
 typeattribute qfp-daemon data_between_core_and_vendor_violators;

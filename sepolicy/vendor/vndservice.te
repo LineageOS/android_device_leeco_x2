@@ -1,0 +1,2 @@
+type vnd_qfp_proxy_service,             vndservice_manager_type;
+type vnd_iqfp_service,                  vndservice_manager_type;
