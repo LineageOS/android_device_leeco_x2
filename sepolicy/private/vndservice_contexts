@@ -1,0 +1,2 @@
+android.apps.IQfpAndroidService                u:object_r:vnd_qfp_proxy_service:s0
+android.apps.IQfpService                       u:object_r:vnd_iqfp_service:s0
