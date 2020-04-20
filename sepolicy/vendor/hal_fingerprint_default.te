@@ -3,4 +3,7 @@ typeattribute hal_fingerprint_default binder_in_vendor_violators;
 allow hal_fingerprint_default iqfp_service:service_manager { find };
 allow hal_fingerprint_default qfp-daemon:binder { call transfer };
 
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+allow hal_fingerprint_default fingerprintd_data_file:dir { rw_dir_perms };
+
 binder_use(hal_fingerprint_default);
