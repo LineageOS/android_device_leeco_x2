@@ -1,0 +1,4 @@
+# Allow vendor_toolbox to remove "security.*" xattrs from /mnt/vendor/persist/qc_senseid
+allow vendor_toolbox persist_qc_senseid_file:dir { r_dir_perms setattr };
+
+allow vendor_toolbox persist_qc_senseid_file:file { r_file_perms setattr };
