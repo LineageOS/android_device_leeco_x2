@@ -44,7 +44,7 @@ vendor/etc/camera/msm8996_camera.xml|e4f189dc27f1dd2c794426dd4f80c339acaaaba8
 
 # Camera (ov4688) - from zl1 - 6.0.1/WAXCNFN5902012312S/letv01060151
 etc/camera/ov4688_chromatix.xml:vendor/etc/camera/ov4688_chromatix.xml|6770b003b812c4a824d7205d7b79426d7a5cd744
-vendor/lib/libmmcamera_ov4688.so|cc4c344caadbd2f27f420187923affd7298579b1
+vendor/lib/libmmcamera_ov4688.so|eab93f324778400c010372e43d293e6969b3dfc6
 vendor/lib/libmmcamera_ov4688_eeprom.so|78a947640fb13082c7d3c109838c7fcdcd033c5a
 
 # Camera actuators - from le_x10 (x850) - 7.1.1/LEXCNFN6061705181T/letv05181516
