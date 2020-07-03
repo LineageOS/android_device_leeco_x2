@@ -72,6 +72,17 @@ on boot
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 664 /sys/devices/virtual/graphics/fb0/rgb
 
+    # for fingerprint calibration
+    chown system system /mnt/vendor/persist/qc_senseid/bg_estimation/bg_basis.dat
+    chown system system /mnt/vendor/persist/qc_senseid/bg_estimation/bg_small1_basis.dat
+    chown system system /mnt/vendor/persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat
+    chown system system /mnt/vendor/persist/qc_senseid/bg_estimation/bg_small2_basis.dat
+    chown system system /mnt/vendor/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
+
+on fs
+    # Set permissions for persist partition
+    mkdir /mnt/vendor/persist/qc_senseid 0700 system system
+
 on post-fs-data
     # Create directories for Fingerprint
     mkdir /data/misc/stargate 0770 system system
