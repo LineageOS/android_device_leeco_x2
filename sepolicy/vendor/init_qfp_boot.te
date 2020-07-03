@@ -1,0 +1,14 @@
+type init_qfp_boot, domain;
+type init_qfp_boot_exec, file_type, exec_type, vendor_file_type;
+
+# Allow for transition from init domain to init_qfp_boot
+init_daemon_domain(init_qfp_boot)
+
+# Shell script needs to execute /vendor/bin/sh
+allow init_qfp_boot vendor_shell_exec:file { rx_file_perms };
+allow init_qfp_boot vendor_toolbox_exec:file { rx_file_perms };
+
+# Allow read and write to /mnt/vendor/persist/qc_senseid
+allow init_qfp_boot persist_qc_senseid_file:dir { rw_dir_perms };
+allow init_qfp_boot persist_qc_senseid_file:file { rw_file_perms };
+allow init_qfp_boot mnt_vendor_file:dir { search };

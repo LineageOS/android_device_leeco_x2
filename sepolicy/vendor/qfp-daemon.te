@@ -24,7 +24,6 @@ allow qfp-daemon vndbinder_device:chr_file { rw_file_perms };
 typeattribute qfp-daemon data_between_core_and_vendor_violators;
 
 allow qfp-daemon qfp_stargate_file:dir { create_dir_perms };
-
 allow qfp-daemon qfp_stargate_file:file { create_file_perms };
 
 binder_use(qfp-daemon);

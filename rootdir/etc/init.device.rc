@@ -79,7 +79,7 @@ on post-fs-data
     mkdir /data/misc/stargate/calib_test 0770 system system
     mkdir /data/misc/stargate/database 0770 system system
 
-service vendor.qfp-boot /vendor/bin/qfp_boot.sh
+service vendor.qfp-boot-sh /vendor/bin/init.qfp_boot.sh
     class late_start
     user system
     oneshot
