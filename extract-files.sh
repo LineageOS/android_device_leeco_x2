@@ -18,7 +18,7 @@ function blob_fixup() {
 
     # Patch blobs for VNDK
     vendor/lib64/hw/fingerprint.qcom.so | vendor/lib64/qfp.wakeup.so)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
+        "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
         ;;
 
     vendor/lib64/libqfp-service.so)
